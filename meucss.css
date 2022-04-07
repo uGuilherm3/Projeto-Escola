@@ -160,7 +160,6 @@ p{
 }
 .projeto1{
     background-image: url(zbackinfo.jpg);
-    border: solid;
     width: 400px;
     height: 680px;
     overflow: hidden;
@@ -183,7 +182,6 @@ p{
 }
 .projeto2{
     background-image: url(zbackinfo.jpg);
-    border: solid;
     width: 400px;
     height: 680px;
     overflow: hidden;
@@ -195,7 +193,6 @@ p{
 }
 .projeto3{
     background-image: url(zbackinfo.jpg);
-    border: solid;
     width: 400px;
     height: 680px;
     z-index: 1;
@@ -208,7 +205,6 @@ p{
 }
 .projeto4{
     background-image: url(zbackinfo.jpg);
-    border: solid;
     width: 400px;
     height: 680px;
     z-index: 1;
