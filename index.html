@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="zlogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>projeto2</title>
 </head>
 <body>
@@ -49,7 +50,7 @@
     </section>
     <section class="projeto">
         <h3 class="h3-projetos">criações dos aluno!</h3>
-        <section class="projetos">
+        <section class="projetos" data-aos="fade-up">
 
         <div class="projeto1">
             <h4 class="h4">informática</h4>
@@ -71,7 +72,7 @@
     </aside>
     <footer>
         <h5>o que nossos alunos dizem sobre a escola:</h5>
-        <section class="feed">
+        <section class="feed" data-aos="fade-left">
             <div class="aluno1">
                 <img class="img-aluno1" src="https://cdn-icons-png.flaticon.com/512/46/46285.png" alt="">
                 <p class="feed-aluno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, repellat? Eos quis debitis qui ratione voluptatibus, eum facere aspernatur possimus consequuntur veniam unde aut odit, ex animi? Quod, atque earum!</p>
@@ -106,5 +107,12 @@
             </div>
         </section>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1000
+    });
+  </script>
 </body>
 </html>
