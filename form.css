@@ -35,6 +35,7 @@ header{
 }
 .logo{
     margin-left: 20%;
+    margin-right: 10px;
     width: 60px;
     border-radius: 50%;
 }
@@ -127,4 +128,16 @@ select:hover{
 .btn1:hover{
     transform: translateY(-5px);
     transition: ease 1s;
+}
+.info{
+    background-color: rgb(191, 255, 191);
+    font-size: 15px;
+}
+.mult{
+    background-color: rgb(235, 191, 255);
+    font-size: 15px;
+}
+.conta{
+    background-color: rgb(255, 251, 191);
+    font-size: 15px;
 }
