@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>form</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
        </nav>
     </header>
    <main>
-    <form action="" method="post">
+    <form action="" method="post" data-aos="fade-left">
         <fieldset class="formulario">
             <div class="form1">
                 <label for="">nome</label>
@@ -45,5 +46,12 @@
         </fieldset>
     </form>
     </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1000
+    });
+  </script>
 </body>
 </html>
