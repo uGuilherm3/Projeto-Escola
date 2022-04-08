@@ -7,10 +7,10 @@ body{
 }
 header{
     padding-top: 10px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
 }
 .div1{
     display: flex;
@@ -24,6 +24,12 @@ header{
     width: 60px;
     border-radius: 50%;
 }
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: end;
+}
 .menu-item{
     margin: 10px;
     padding: 3px;
@@ -31,8 +37,11 @@ header{
     color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     font-weight: 100px;
+    transform: translateY(5px);
 }
 .menu-item:hover{
+    transform: translateY(0px);
+    transition: transform 0.5s ease;
     border-bottom: solid green;
 }
 main{
