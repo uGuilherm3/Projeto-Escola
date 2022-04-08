@@ -130,14 +130,11 @@ select:hover{
     transition: ease 1s;
 }
 .info{
-    background-color: rgb(191, 255, 191);
     font-size: 15px;
 }
 .mult{
-    background-color: rgb(235, 191, 255);
     font-size: 15px;
 }
 .conta{
-    background-color: rgb(255, 251, 191);
     font-size: 15px;
 }
