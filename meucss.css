@@ -37,10 +37,10 @@ header{
     color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     font-weight: 100px;
-    transform: translateY(5px);
+    transform: translateY(0px);
 }
 .menu-item:hover{
-    transform: translateY(0px);
+    transform: translateY(-5px);
     transition: transform 0.5s ease;
     border-bottom: solid green;
 }
