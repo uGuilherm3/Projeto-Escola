@@ -38,6 +38,9 @@ header{
     justify-content: flex-start;
     text-align: end;
 }
+#bot{
+    cursor: pointer;
+}
 .menu-item{
     margin: 10px;
     padding: 3px;
