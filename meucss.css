@@ -4,7 +4,7 @@
 body{
     background-image: url(zback.jpg);
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     margin: 0%;
@@ -51,7 +51,7 @@ header{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
-    font-weight: 100px;
+    font-weight: 100;
     transform: translateY(0px);
 }
 .menu-item:hover{
@@ -72,6 +72,7 @@ h2{
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 300%;
+    font-weight: 800;
 }
 .main-p{
     color: white;
@@ -102,15 +103,30 @@ aside{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url(https://img.freepik.com/fotos-gratis/quadro-de-suprimentos-de-escola-ou-escritorio-na-mesa-de-madeira-rustica_24837-96.jpg?w=2000);
+    background-color: rgba(191, 255, 191, 0.432);
     background-repeat: no-repeat;
     background-size: cover;
+    transform: skewY(-5deg);
+    overflow: hidden;
 }
 .estudante{
     width: 21%;
+    transform: skewY(5deg);
 }
 .exp-cont{
-    
+    font-family: "Ginto Normal","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    width: 35%;
+    transform: skewY(5deg);
+}
+.exp-h3{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 800;
+}
+.exp-p{
+    font-size: 20px;
+    line-height: 1.625;
+    color: rgb(0, 0, 0);
 }
 .h3{
     font-family: 'Poppins', sans-serif;
@@ -130,6 +146,7 @@ h4{
     justify-content: center;
     align-items: center;
     width: 100%;
+    overflow: hidden;
 }
 .projetos{
     transform: skewX(-10deg);
@@ -147,11 +164,16 @@ h4{
     width: 35%;
 }
 .projetos h4{
+    margin-left: 40%;
     position: absolute;
     z-index: 1;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.603);
     text-align: center;
-    width: 100%;
+    padding: 5px;
+    font-weight: 800;
+    border-radius: 10px;
+    width: max-content;
     margin-top: 35%;
     transform: translateY(50px);
     opacity: 0;
