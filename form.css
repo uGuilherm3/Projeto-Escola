@@ -120,14 +120,13 @@ select:hover{
     align-items: center;
     border-radius: 25px;
     font-size: 15px;
-    background: linear-gradient(45deg, rgb(191, 255, 191), rgb(255, 251, 191), rgb(191, 251, 255));
-    animation: back 10s ease infinite;
     background-size: 300%;
     transform: translateY(0px);
+    transition: 0.5s ease;
 }
 .btn1:hover{
     transform: translateY(-5px);
-    transition: ease 1s;
+    box-shadow: 1px 1px 10px 5px rgb(216, 216, 216);
 }
 .info{
     font-size: 15px;
