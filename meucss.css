@@ -60,40 +60,53 @@ header{
     border-bottom: solid green;
 }
 main{
-    display: flex;
-    margin-top: 11%;
-    flex-direction: column;
-    align-items: center;
-    height: 77%;
+    height: 90%;
     width: 98.8vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
-h2{
-    text-align: center;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 300%;
-    font-weight: 800;
-}
-.main-p{
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100px;
-    margin-bottom: 50px;
-}
-.btn1{
-    color: white;
+main a{
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    border: 2px solid white;
+    color: white;
+    border: solid white 2px;
     padding: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
-    transition: 0.5s ease;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 15px;
 }
-.btn1:hover{
-    background-color: rgb(0, 148, 0);
+main a:hover {
+    background-color: green;
+}
+main h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    border-right: solid white 2.5px;
+    animation: piscar 900ms infinite, texto steps(35) 3s 2s;
+    overflow: hidden;
+    white-space: nowrap;
+    height: max-content;
+}
+@keyframes piscar {
+    from{
+        border-right-color: #fff;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+@keyframes texto {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 910px;
+    }
 }
 aside{
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
