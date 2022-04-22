@@ -1,5 +1,11 @@
-*{
-    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'whit';
+    src: url(whitneylight.otf);
+}
+@font-face {
+    font-family: 'whitb';
+    src: url(whitneybold.otf);
 }
 body{
     background-image: url(zback.jpg);
@@ -16,6 +22,10 @@ body{
     50%{
         transform: translateY(-10px);
     }
+}
+h1{
+    font-size: 30px;
+    font-weight: 800;
 }
 header{
     padding-top: 10px;
@@ -45,14 +55,13 @@ header{
 #bot{
     cursor: pointer;
 }
-.menu-item{
+.menu-item {
     margin: 10px;
     padding: 3px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
     transform: translateY(0px);
+    font-family: 'whit';
 }
 .menu-item:hover{
     transform: translateY(-5px);
@@ -70,11 +79,12 @@ main{
 main a{
     text-decoration: none;
     color: white;
-    border: solid white 2px;
+    border: solid white 1px;
     padding: 10px;
-    padding-right: 25px;
-    padding-left: 25px;
-    font-size: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 main a:hover {
     background-color: green;
@@ -84,7 +94,7 @@ main h2{
     font-size: 50px;
     font-weight: 800;
     border-right: solid white 2.5px;
-    animation: piscar 900ms infinite, texto steps(35) 3s 2s;
+    animation: piscar 1000ms infinite, texto steps(35) 3s 2s;
     overflow: hidden;
     white-space: nowrap;
     height: max-content;
@@ -102,11 +112,11 @@ main h2{
         width: 0px;
     }
     to{
-        width: 910px;
+        width: 711px;
     }
 }
 aside{
-    margin-top: 5%;
+    margin-top: 6%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,21 +136,21 @@ aside{
     transform: skewY(5deg);
 }
 .exp-cont{
-    font-family: "Ginto Normal","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
     width: 35%;
     transform: skewY(5deg);
 }
 .exp-h3{
     color: rgb(0, 0, 0);
+    font-family: 'whitb',Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: 800;
 }
 .exp-p{
     font-size: 20px;
     font-weight: 100;
-    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'whit', Helvetica, Arial, sans-serif;
     line-height: 1.525;
-    color: rgb(49, 49, 49);
+    color: rgb(0, 0, 0);
 }
 .evento{
     margin-top: 5%;
@@ -158,12 +168,13 @@ aside{
 }
 .eventos h3{
     display: flex;
+    font-family: 'whitb';
     justify-content: center;
     font-size: 40px;
-    font-weight: 800;
+    font-weight: bold;
 }
 .eventos p{
-    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'whit', Arial, sans-serif;
     text-align: center;
     width: 50%;
     font-size: 20px;
@@ -285,6 +296,7 @@ h4{
     height: 40vh;
     text-align: center;
     gap: 5%;
+    visibility: visible;
 }
 .info i{
     color: rgb(109, 167, 255);
@@ -300,21 +312,97 @@ h4{
     font-weight: 800;
 }
 .info p{
+    font-family: 'whit';
     font-size: 20px;
     font-weight: 100;
     line-height: 1.700;
 }
 .mult{
-    display: none;
+    display: flex;
+    align-items: flex-start;
+    width: 80vw;
+    height: 40vh;
+    text-align: center;
+    gap: 5%;
+    visibility: hidden;
     position: absolute;
+}
+.mult i{
+    color: rgb(184, 109, 255);
+    font-size: 70px;
+    font-weight: 100;
+}
+.mult div{
+    text-align: center;
+    width: 30%;
+}
+.mult h4{
+    font-size: 25px;
+    font-weight: 800;
+}
+.mult p{
+    font-family: 'whit';
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.700;
 }
 .conta{
-    display: none;
+    display: flex;
+    align-items: flex-start;
+    width: 80vw;
+    height: 40vh;
+    text-align: center;
+    gap: 5%;
+    visibility: hidden;
     position: absolute;
 }
+.conta i{
+    color: rgb(255, 228, 109);
+    font-size: 70px;
+    font-weight: 100;
+}
+.conta div{
+    text-align: center;
+    width: 30%;
+}
+.conta h4{
+    font-size: 25px;
+    font-weight: 800;
+}
+.conta p{
+    font-family: 'whit';
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.700;
+}
 .redes{
-    display: none;
+    display: flex;
+    align-items: flex-start;
+    width: 80vw;
+    height: 40vh;
+    text-align: center;
+    gap: 5%;
+    visibility: hidden;
     position: absolute;
+}
+.redes i{
+    color: rgb(150, 255, 109);
+    font-size: 70px;
+    font-weight: 100;
+}
+.redes div{
+    text-align: center;
+    width: 30%;
+}
+.redes h4{
+    font-size: 25px;
+    font-weight: 800;
+}
+.redes p{
+    font-family: 'whit';
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.700;
 }
 .feed{
     background-color: rgb(245, 245, 245);
@@ -331,11 +419,14 @@ h4{
     font-size: 70px;
 }
 .feed h5{
+    font-family: 'whitb';
     font-size: 17px;
     font-weight: 800;
 }
 .feed p{
-    font-size: 18px;
+    font-family: 'whit', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
     line-height: 1.900;
     margin-bottom: 30px;
 }

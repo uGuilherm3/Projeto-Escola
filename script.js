@@ -25,9 +25,30 @@ var conteudo3 = document.querySelector('.conta')
 var conteudo4 = document.querySelector('.redes')
 
 btn1.addEventListener('click', function(){
-    if (conteudo.style.visibility === 'hidden') {
-        (conteudo.style.visibility = 'visible')
-    } else {
+    if (conteudo.style.visibility === 'visible') {
         (conteudo.style.visibility = 'hidden')
+    } else {
+        (conteudo.style.visibility = 'visible')
+    }
+})
+btn2.addEventListener('click', function(){
+    if (conteudo2.style.visibility === 'hidden') {
+        (conteudo2.style.visibility = 'visible')
+    } else {
+        (conteudo2.style.visibility = 'hidden')
+    }
+})
+btn3.addEventListener('click', function(){
+    if (conteudo3.style.visibility === 'hidden') {
+        (conteudo3.style.visibility = 'visible')
+    } else {
+        (conteudo3.style.visibility = 'hidden')
+    }
+})
+btn4.addEventListener('click', function(){
+    if (conteudo4.style.visibility === 'hidden') {
+        (conteudo4.style.visibility = 'visible')
+    } else {
+        (conteudo4.style.visibility = 'hidden')
     }
 })
