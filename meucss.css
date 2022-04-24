@@ -116,28 +116,24 @@ main h2{
     }
 }
 aside{
-    margin-top: 6%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .exp{
+    margin-top: 2%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 73vh;
-    background-color: rgba(37, 255, 37, 0.089);
-    transform: skewY(-5deg);
-    overflow: hidden;
+    height: 75vh;
 }
 .estudante{
-    width: 21%;
-    transform: skewY(5deg);
+    width: 50%;
 }
 .exp-cont{
+    text-align: center;
     width: 35%;
-    transform: skewY(5deg);
 }
 .exp-h3{
     color: rgb(0, 0, 0);
@@ -153,18 +149,23 @@ aside{
     color: rgb(0, 0, 0);
 }
 .evento{
-    margin-top: 5%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(240, 240, 240);
 }
 .evento img{
-    width: 50%;
+    width: 40%;
+    border-radius: 10px;
 }
 .eventos{
-    width: 43%;
+    width: 40%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 .eventos h3{
     display: flex;
