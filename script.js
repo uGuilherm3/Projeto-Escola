@@ -15,40 +15,23 @@ btn.addEventListener('click', () => {
 //        imagem.style.display, imagem2.style.display = 'block';
 //    }
 //})
-var btn1 = document.querySelector('.projetos')
-var btn2 = document.querySelector('.projetos2')
-var btn3 = document.querySelector('.projetos3')
-var btn4 = document.querySelector('.projetos4')
-var conteudo = document.querySelector('.info')
-var conteudo2 = document.querySelector('.mult')
-var conteudo3 = document.querySelector('.conta')
-var conteudo4 = document.querySelector('.redes')
+var tempo = 3000,
+    primeira = 0,
+    images = document.querySelectorAll(".slides img")
+    max = images.length;
 
-btn1.addEventListener('click', function(){
-    if (conteudo.style.visibility === 'visible') {
-        (conteudo.style.visibility = 'hidden')
-    } else {
-        (conteudo.style.visibility = 'visible')
+    function proxima() {
+        images[primeira].classList.remove("selecionado")
+        primeira++
+        if(primeira >= max)
+        primeira = 0
+        images[primeira].classList.add("selecionado")
     }
-})
-btn2.addEventListener('click', function(){
-    if (conteudo2.style.visibility === 'hidden') {
-        (conteudo2.style.visibility = 'visible')
-    } else {
-        (conteudo2.style.visibility = 'hidden')
+
+    function inicio() {
+        setInterval(() => {
+            proxima()
+        }, tempo)
     }
-})
-btn3.addEventListener('click', function(){
-    if (conteudo3.style.visibility === 'hidden') {
-        (conteudo3.style.visibility = 'visible')
-    } else {
-        (conteudo3.style.visibility = 'hidden')
-    }
-})
-btn4.addEventListener('click', function(){
-    if (conteudo4.style.visibility === 'hidden') {
-        (conteudo4.style.visibility = 'visible')
-    } else {
-        (conteudo4.style.visibility = 'hidden')
-    }
-})
+
+    window.addEventListener("load", inicio)  
