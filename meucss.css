@@ -306,7 +306,7 @@ h3{
     font-size: 18px;
     text-align: center;
 }
-/*sec4-end*/
+/*sec3-end*/
 .sec4{
     background-color: #121212;
     clip-path: polygon(0 0, 0 0, 100% 10%, 100% 90%, 0 100%, 0% 50%);
@@ -346,4 +346,36 @@ h3{
     align-items: center;
     justify-content: center;
     gap: 5%;
+}
+/*sec4-end*/
+.sec5{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.sec5 div{
+    width: 15%;
+    text-align: center;
+    padding: 1%;
+}
+.sec5 h4{
+    color: #10403B;
+    font-family: "whitb";
+    font-size: 20px;
+}
+.sec5 p{
+    color: #4C5958;
+    font-family: "whit";
+    font-size: 18px;
+}
+.sec5 i{
+    color: #4C5958;
+    font-size: 50px;
+}
+/*sec5-end*/
+.sec6{
+    background-image: url(https://cdn1.unasp.br/home/2017/07/alunos-estudando-juntos-no-unasp-1440x718.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
 }
