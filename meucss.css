@@ -149,6 +149,17 @@ main h2{
     font-family: "whit";
     font-size: 15px;
 }
+.sec1 a{
+    width: max-content;
+    border: solid 0.1px;
+    color: #121212;
+    padding: 1%;
+    clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
+    transition: 0.5s ease;
+}
+.sec1 a:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+}
 .sec1 i{
     font-size: 17px;
     margin-top: 4px;
@@ -213,7 +224,7 @@ h3{
     transition: 0.1s ease;
 }
 .sec2 img:hover{
-    transform: scale(105%);
+    transform: scale(107%);
 }
 /*slide*/
 .slide{
@@ -374,8 +385,72 @@ h3{
 }
 /*sec5-end*/
 .sec6{
-    background-image: url(https://cdn1.unasp.br/home/2017/07/alunos-estudando-juntos-no-unasp-1440x718.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.sec6 div{
+    width: 30%;
+} 
+.sec6 img{
+    width: 35%;
+}
+.sec6 h4{
+    color: #10403B;
+    font-family: "whitb";
+    font-size: 30px;
+}
+.sec6 p{
+    color: #4C5958;
+    font-family: "whit";
+    font-size: 18px;
+}
+footer{
+    background-color: #121212;
+    border: solid;
+    height: 35vh;
+}
+footer .roda{
+    display: flex;
+    align-items: center;
+    gap: 40%;
+    margin-top: 2%;
+}
+footer div{
+    display: flex;
+    gap: 25px;
+}
+footer a{
+    text-decoration: none;
+    color: #BFBFBF;
+    font-family: "whit";
+    font-size: 15px;
+}
+.border{
+    background-color: #BFBFBF;
+    height: 1px;
+    width: 20%;
+    border-radius: 5px;
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.rodape i{
+    color: #BFBFBF;
+    font-size: 30px;
+}
+.fim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #BFBFBF;
+    font-size: 15px;
+    font-family: "whit";
+    margin-top: 2%;
 }
