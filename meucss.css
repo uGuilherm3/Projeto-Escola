@@ -122,7 +122,6 @@ main h2{
     white-space: nowrap;
     height: max-content;
 }
-
 /*sec1*/
 .sec1{
     margin-top: 2%;
@@ -205,8 +204,6 @@ h3{
     background-color: #127369;
 }
 /*titulo-end*/
-.sec2{
-}
 .cont{
     overflow: hidden;
     height: 50vh;
