@@ -412,14 +412,22 @@ h3{
 }
 /*sec4-end*/
 .sec5{
-    margin-top: 2%;
+    margin-top: 1%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
-.sec5 div{
+.sec5:hover .borde{
+    width: 2%;
+}
+.sec5 .apre{
     width: 15%;
     text-align: center;
     padding: 1%;
+}
+.content2{
+    display: flex;
+    justify-content: center;
 }
 .sec5 h4{
     color: #10403B;
