@@ -24,4 +24,9 @@ var tempo = 3000,
     }
 
     window.addEventListener("load", inicio) 
-    
+
+const btn2 = document.querySelector('.topo')
+
+btn2.addEventListener('click', () => {
+    window.scroll({top: 0, behavior: "smooth"})
+})
