@@ -189,6 +189,7 @@ main h2{
     align-items: center;
     padding: 0;
     margin-top: 2%;
+    width: 100%;
 }
 h3{
     text-align: center;
@@ -198,12 +199,16 @@ h3{
     margin: 0;
 }
 .borde{
-    width: 2%;
+    width: 1%;
     border-radius: 5px;
     height: 5px;
     background-color: #127369;
+    transition: 0.1s ease;
 }
 /*titulo-end*/
+.sec2:hover .borde{
+    width: 2%;
+}
 .cont{
     overflow: hidden;
     height: 50vh;
@@ -223,6 +228,8 @@ h3{
 .sec2 img:hover{
     transform: scale(107%);
 }
+/*sec2-end*/
+
 /*slide*/
 .slide{
     border: solid;
@@ -291,7 +298,15 @@ h3{
 }
 /*slide-end*/
 .sec3{
-    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec3:hover .borde{
+    width: 2%;
+}
+.content1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,23 +330,57 @@ h3{
     text-align: center;
 }
 /*sec3-end*/
+
+/*titulo2*/
+.titulo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 4%;
+    width: 100%;
+}
+.titulo2 h3{
+    color: #BFBFBF;
+}
+.borde2{
+    width: 1%;
+    border-radius: 5px;
+    height: 5px;
+    background-color: #127369;
+    transition: 0.1s ease;
+}
+/*titulo2-end*/
+
 .sec4{
     background-color: #121212;
-    clip-path: polygon(0 0, 0 0, 100% 10%, 100% 90%, 0 100%, 0% 50%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: 80vh;
+}
+.sec4:hover .borde2{
+    width: 2%;
+}
+.feeder{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1%;
+    overflow: hidden;
+    padding: 1%;
 }
 .sec4 h4{
-    color: #10403B;
+    color: #BFBFBF;
     font-family: "whitb";
     font-size: 20px;
     text-align: center;
     margin: 0;
 }
 .sec4 p{
-    color: #4C5958;
+    color: #BFBFBF;
     font-family: "whit";
     font-size: 18px;
     text-align: center;
@@ -339,12 +388,18 @@ h3{
 .sec4 i{
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 40px;
+    color: #BFBFBF;
 }
 .aluno1{
-    border-radius: 10px;
-    padding: 3%;
-    width: 15%;
+    clip-path: polygon(0 0, 90% 0, 100% 15%, 100% 100%, 10% 100%, 0 85%);
+    border: solid #BFBFBF 0.1px;
+    padding: 1%;
+    width: 18%;
+    transition: 0.5s ease;
+}
+.aluno1:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
 }
 .aluno1 img{
     width: 17%;
