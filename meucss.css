@@ -357,6 +357,9 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 5px 5px rgb(247, 247, 247);
+    padding: 1% 0%;
+    width: 100%;
 }
 .sec3 img{
     width: 40%;
