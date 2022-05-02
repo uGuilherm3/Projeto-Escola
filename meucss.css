@@ -204,6 +204,7 @@ h3{
     height: 5px;
     background-color: #127369;
     transition: 0.1s ease;
+    padding-top: 8px;
 }
 /*titulo-end*/
 .sec2:hover .borde{
