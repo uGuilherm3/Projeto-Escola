@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 @font-face {
     font-family: 'whit';
     src: url(whitneylight.otf);
@@ -108,6 +111,7 @@ main a{
     padding-left: 15px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1%;
 }
 main a:hover {
     background-color: green;
@@ -124,6 +128,7 @@ main h2{
 }
 /*sec1*/
 .sec1{
+    height: 53vh;
     margin-top: 2%;
     display: flex;
     justify-content: center;
@@ -133,11 +138,13 @@ main h2{
     color: #10403B;
     font-family: "whitb";
     font-size: 30px;
+    margin-bottom: 5%;
 }
 .sec1 p{
     color: #4C5958;
     font-family: "whit";
     font-size: 18px;
+    margin-bottom: 5%;
 }
 .sec1 a{
     text-decoration: none;
@@ -188,7 +195,7 @@ main h2{
     flex-direction: column;
     align-items: center;
     padding: 0;
-    margin-top: 2%;
+    margin-top: 1%;
     width: 100%;
 }
 h3{
@@ -196,7 +203,8 @@ h3{
     font-family: "whit";
     font-size: 35px;
     font-weight: 100;
-    margin: 0;
+    margin-bottom: 5px;
+    z-index: 1;
 }
 .borde{
     width: 1%;
@@ -204,9 +212,40 @@ h3{
     height: 5px;
     background-color: #127369;
     transition: 0.1s ease;
-    padding-top: 8px;
+    margin-bottom: 1%;
+    z-index: 1;
 }
 /*titulo-end*/
+/*titulo2*/
+.titulo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 1%;
+    width: 100%;
+}
+.titulo2 h3{
+    color: #BFBFBF;
+    text-align: center;
+    font-family: "whit";
+    font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 5px;
+    z-index: 1;
+}
+.borde2{
+    width: 1%;
+    border-radius: 5px;
+    height: 4px;
+    background-color: #8AA6A3;
+    transition: 0.1s ease;
+    margin-bottom: 1%;
+    z-index: 1;
+}
+/*titulo2-end*/
+
+/*sec2*/
 .sec2:hover .borde{
     width: 2%;
 }
@@ -235,69 +274,76 @@ h3{
 .slide{
     border: solid;
     background: linear-gradient(45deg,#121212,rgb(29, 29, 29));
-    height: 80vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.slide:hover .borde2{
+    width: 2%;
+}
+article{
+    opacity: 0;
+    transform: translateX(-5%);
+    overflow: hidden;
+}
+.selecionado{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.5s;
+}
+.slider{
+    position: absolute;
+}
+.slides{
     display: flex;
     align-items: center;
 }
-.slides img{
-    width: 40%;
-    border-radius: 10px; 
-    opacity: 0;
-}
-.slides .selecionado{
-    opacity: 1;
-    width: 40%;
-    border-radius: 10px;
-}
-.slides{
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-}
-.conteudo{
-    text-align: center;
+.princi{
+    height: 90vh;
+    object-fit: cover;
     width: 20%;
-    gap: 50px;
+    box-shadow: #202020 0px 0px 15px 1px;
 }
-.conteudo h3{
-    font-family: "whitb";
-    color: #10403B;
-    font-size: 30px;
-}
-.conteudo p{
-    padding-top: 2%;
-    font-family: "whit";
-    color: #4C5958;
-    font-size: 18px;
-    line-height: 1.700;
-}
-.imgs{
-    width: 5%;;
+.conteudo1{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    color: #BFBFBF;
+    font-family: "whit";
+    height: 70vh;
+    text-align: center;
+    padding: 5%;
+    box-shadow: #202020 0px 0px 15px 1px;
 }
-.imgs button{
-    background-image: url(https://i.pinimg.com/originals/11/1a/03/111a03133d14214539c96e0f657dff1a.png);
-    background-size: cover;
+.conteudo1 i{
+    font-size: 70px;
+    text-align: center;
+}
+.conteudo2{
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    color: #BFBFBF;
+    margin-left: 1%;
+}
+.conteudo2 img{
     width: 100%;
-    height: 6vh;
-    border-radius: 5px;
-    border: none;
-    margin-top: 40px;
-    position: relative;
-}
-.imgs p{
+    margin-top: 15%;
+}    
+.conteudo2 p{
     margin: 0;
-    height: 5px;
     width: 100%;
-    background-color: #127369;
-    animation: borda 3s 3s infinite;
+    height: 3.5px;
+    background-color: #BFBFBF;
+    animation: borda 5s 5s infinite;
     border-radius: 5px;
 }
 /*slide-end*/
+
+/*sec3*/
 .sec3{
     display: flex;
     flex-direction: column;
@@ -323,6 +369,7 @@ h3{
     font-family: "whitb";
     font-size: 30px;
     text-align: center;
+    margin-bottom: 5%;
 }
 .sec3 p{
     color: #4C5958;
@@ -332,86 +379,7 @@ h3{
 }
 /*sec3-end*/
 
-/*titulo2*/
-.titulo2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin-top: 4%;
-    width: 100%;
-}
-.titulo2 h3{
-    color: #BFBFBF;
-}
-.borde2{
-    width: 1%;
-    border-radius: 5px;
-    height: 5px;
-    background-color: #127369;
-    transition: 0.1s ease;
-}
-/*titulo2-end*/
-
-.sec4{
-    background-color: #121212;
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0% 100%);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 80vh;
-}
-.sec4:hover .borde2{
-    width: 2%;
-}
-.feeder{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1%;
-    overflow: hidden;
-    padding: 1%;
-}
-.sec4 h4{
-    color: #BFBFBF;
-    font-family: "whitb";
-    font-size: 20px;
-    text-align: center;
-    margin: 0;
-}
-.sec4 p{
-    color: #BFBFBF;
-    font-family: "whit";
-    font-size: 18px;
-    text-align: center;
-}
-.sec4 i{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    color: #BFBFBF;
-}
-.aluno1{
-    clip-path: polygon(0 0, 90% 0, 100% 15%, 100% 100%, 10% 100%, 0 85%);
-    border: solid #BFBFBF 0.1px;
-    padding: 1%;
-    width: 18%;
-    transition: 0.5s ease;
-}
-.aluno1:hover{
-    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
-}
-.aluno1 img{
-    width: 17%;
-}
-.aluno{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-}
-/*sec4-end*/
+/*sec5*/
 .sec5{
     margin-top: 1%;
     display: flex;
@@ -434,6 +402,7 @@ h3{
     color: #10403B;
     font-family: "whitb";
     font-size: 20px;
+    margin-bottom: 5%;
 }
 .sec5 p{
     color: #4C5958;
@@ -442,14 +411,15 @@ h3{
 }
 .sec5 i{
     color: #4C5958;
-    font-size: 50px;
+    font-size: 60px;
 }
 .sec5 img{
     width: 55%;
 }
 /*sec5-end*/
+
+/*sec6*/
 .sec6{
-    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -465,6 +435,7 @@ h3{
     color: #10403B;
     font-family: "whitb";
     font-size: 30px;
+    margin-bottom: 5%;
 }
 .sec6 p{
     color: #4C5958;
@@ -503,6 +474,7 @@ footer a{
     justify-content: center;
     align-items: center;
     gap: 15px;
+    margin-top: 1%;
 }
 .rodape i{
     color: #BFBFBF;

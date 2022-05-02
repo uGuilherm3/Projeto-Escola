@@ -1,12 +1,13 @@
 const btn = document.querySelector('#bot')
 
 btn.addEventListener('click', () => {
-    window.scroll({top: window.innerHeight, behavior: "smooth"})
+    window.scroll({top: window.innerHeight*2.25, behavior: "smooth"})
 })
 
-var tempo = 3000,
+//slide
+var tempo = 5000,
     primeira = 0,
-    images = document.querySelectorAll(".slides img")
+    images = document.querySelectorAll(".slide article")
     max = images.length;
 
     function proxima() {
@@ -24,6 +25,7 @@ var tempo = 3000,
     }
 
     window.addEventListener("load", inicio) 
+//slide-end
 
 const btn2 = document.querySelector('.topo')
 

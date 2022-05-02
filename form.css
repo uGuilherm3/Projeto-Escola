@@ -18,7 +18,7 @@
 }
 body{
     background: linear-gradient(45deg,#121212, #4C5958,#10403B );
-    background-size: 400%;
+    background-size: 500%;
     animation: back 10s ease infinite;
     margin: 0%;
     height: 100vh;
@@ -120,7 +120,6 @@ button{
 }
 button:hover{
     box-shadow: 1px 1px 10px 1px rgb(235, 235, 235);
-    transform: scale(110%);
 }
 input:hover{
     box-shadow: 1px 1px 10px 1px rgb(230, 230, 230);
