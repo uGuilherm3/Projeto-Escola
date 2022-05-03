@@ -195,7 +195,6 @@ main h2{
     flex-direction: column;
     align-items: center;
     padding: 0;
-    margin-top: 1%;
     width: 100%;
 }
 h3{
@@ -272,9 +271,7 @@ h3{
 
 /*slide*/
 .slide{
-    border: solid;
     background: linear-gradient(45deg,#121212,rgb(29, 29, 29));
-    height: 100vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -284,62 +281,68 @@ h3{
 }
 article{
     opacity: 0;
-    transform: translateX(-5%);
-    overflow: hidden;
 }
 .selecionado{
     opacity: 1;
-    transform: translateX(0);
-    transition: 0.5s;
 }
-.slider{
-    position: absolute;
-}
-.slides{
+.conteu{
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-.princi{
-    height: 90vh;
-    object-fit: cover;
-    width: 20%;
-    box-shadow: #202020 0px 0px 15px 1px;
+    overflow: hidden;
 }
 .conteudo1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 5%;
     justify-content: center;
-    gap: 10%;
+    width: 40%;
+    color: #BFBFBF;
+    height: 80vh;
+    box-shadow: 0px 0px 15px 5px #121212;
+}
+.conteudo1 h3{
+    font-family: "whitb";
+    color: #8AA6A3;
+}
+.conteudo1 p{
+    font-family: "whit";
+    font-size: 20px;
+}
+.princi{
+    height: 80vh;
+    width: 20%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px 5px #121212;
+}
+.conteudo1 a{
+    width: max-content;
+    text-decoration: none;
     color: #BFBFBF;
     font-family: "whit";
-    height: 70vh;
-    text-align: center;
-    padding: 5%;
-    box-shadow: #202020 0px 0px 15px 1px;
+    font-size: 18px;
+    border: solid white 0.1px;
+    padding: 1.5% 2%;
+    clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
 }
-.conteudo1 i{
-    font-size: 70px;
-    text-align: center;
+.conteudo1 a:hover{
+    animation: borda1 3s infinite;
 }
-.conteudo2{
-    width: 5%;
-    display: flex;
-    flex-direction: column;
-    color: #BFBFBF;
-    margin-left: 1%;
-}
-.conteudo2 img{
-    width: 100%;
-    margin-top: 15%;
-}    
-.conteudo2 p{
-    margin: 0;
-    width: 100%;
-    height: 3.5px;
-    background-color: #BFBFBF;
-    animation: borda 5s 5s infinite;
-    border-radius: 5px;
+@keyframes borda1 {
+    0%{
+        clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
+    }
+    20%{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+    }
+    40%{
+        clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
+    }
+    60%{
+        clip-path: polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%);
+    }
 }
 /*slide-end*/
 
