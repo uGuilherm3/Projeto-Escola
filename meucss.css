@@ -281,9 +281,15 @@ h3{
 }
 article{
     opacity: 0;
+    transform: translateX(-5%);
 }
 .selecionado{
     opacity: 1;
+    transform: translateX(0%);
+    transition: 1s;
+}
+.slider{
+    position: absolute;
 }
 .conteu{
     display: flex;
@@ -305,7 +311,7 @@ article{
 }
 .conteudo1 h3{
     font-family: "whitb";
-    color: #8AA6A3;
+    color: #BFBFBF;
 }
 .conteudo1 p{
     font-family: "whit";
@@ -320,11 +326,11 @@ article{
 .conteudo1 a{
     width: max-content;
     text-decoration: none;
-    color: #BFBFBF;
+    color: #8AA6A3;
     font-family: "whit";
     font-size: 18px;
-    border: solid white 0.1px;
-    padding: 1.5% 2%;
+    border: solid rgba(255, 255, 255, 0.377) 0.1px;
+    padding: 1.1% 1.6%;
     clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
 }
 .conteudo1 a:hover{
@@ -344,6 +350,7 @@ article{
         clip-path: polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%);
     }
 }
+
 /*slide-end*/
 
 /*sec3*/
