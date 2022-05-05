@@ -196,6 +196,7 @@ main h2{
     align-items: center;
     padding: 0;
     width: 100%;
+    margin-top: 1%;
 }
 h3{
     text-align: center;
@@ -254,7 +255,7 @@ h3{
     margin: 0;
     padding: 0;
     display: flex;
-    padding: 2% 5%;
+    padding: 1% 5% 3%;
 }
 .sec2 img{
     width: 20%;
@@ -265,7 +266,7 @@ h3{
     transition: 0.1s ease;
 }
 .sec2 img:hover{
-    transform: scale(107%);
+    transform: scale(110%);
 }
 /*sec2-end*/
 
@@ -285,10 +286,11 @@ article{
 }
 .selecionado{
     opacity: 1;
+    border: solid;
+    height: 87vh;
     transform: translateX(0%);
     transition: 1s;
-}
-.slider{
+    overflow: hidden;
     position: absolute;
 }
 .conteu{
@@ -457,14 +459,14 @@ article{
 }
 footer{
     background-color: #121212;
-    border: solid;
     height: 35vh;
 }
 footer .roda{
     display: flex;
     align-items: center;
     gap: 40%;
-    margin-top: 2%;
+    margin-top: 1%;
+    padding: 1%;
 }
 footer div{
     display: flex;
@@ -475,6 +477,9 @@ footer a{
     color: #BFBFBF;
     font-family: "whit";
     font-size: 15px;
+}
+footer a:hover{
+    text-decoration: underline;
 }
 .border{
     background-color: #BFBFBF;
@@ -487,11 +492,15 @@ footer a{
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: 1%;
+    margin-top: 1%; 
 }
 .rodape i{
     color: #BFBFBF;
     font-size: 30px;
+    cursor: pointer;
+}
+.rodape i:hover{
+    color: #8AA6A3;
 }
 .fim{
     display: flex;
