@@ -412,7 +412,7 @@ article{
 .sec5 .apre{
     width: 15%;
     text-align: center;
-    padding: 1%;
+    padding: 2% 0;
 }
 .content2{
     display: flex;
@@ -428,6 +428,9 @@ article{
     color: #4C5958;
     font-family: "whit";
     font-size: 18px;
+}
+.sec5 a{
+    text-decoration: none;
 }
 .sec5 i{
     color: #4C5958;
