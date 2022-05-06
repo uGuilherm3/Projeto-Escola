@@ -41,7 +41,7 @@
     to{
         width: 100%;
     }
-}
+}    
 body{
     background-image: url(zback.jpg);
     background-size: cover;
@@ -80,6 +80,9 @@ header{
     text-align: end;
 }
 #bot{
+    cursor: pointer;
+}
+#bot2{
     cursor: pointer;
 }
 .menu-item {
@@ -433,10 +436,22 @@ article{
 .sec5 img{
     width: 55%;
 }
+.b1-div{
+    text-align: center;
+    display: flex;
+    margin: 1%;
+    justify-content: center;
+}
+.b1{
+    width: 30%;
+    height: 0.1px;
+    background-color: #BFBFBF;
+}
 /*sec5-end*/
 
 /*sec6*/
 .sec6{
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;

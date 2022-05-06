@@ -4,6 +4,12 @@ btn.addEventListener('click', () => {
     window.scroll({top: window.innerHeight*2.19, behavior: "smooth"})
 })
 
+const btn2 = document.querySelector('#bot2')
+
+btn2.addEventListener('click', () => {
+    window.scroll({top: window.innerHeight*3.7, behavior: "smooth"})
+})
+
 //slide
 var tempo = 6000,
     primeira = 0,
@@ -27,7 +33,7 @@ var tempo = 6000,
     window.addEventListener("load", inicio) 
 //slide-end
 
-const btn2 = document.querySelector('.topo')
+const btn3 = document.querySelector('.topo')
 
 btn2.addEventListener('click', () => {
     window.scroll({top: 0, behavior: "smooth"})
