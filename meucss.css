@@ -31,7 +31,7 @@
         width: 0px;
     }
     to{
-        width: 711px;
+        width: 830px;
     }
 }
 @keyframes  borda{
@@ -289,7 +289,6 @@ article{
 }
 .selecionado{
     opacity: 1;
-    border: solid;
     height: 87vh;
     transform: translateX(0%);
     transition: 1s;

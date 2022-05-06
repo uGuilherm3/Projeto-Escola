@@ -5,7 +5,7 @@ btn.addEventListener('click', () => {
 })
 
 //slide
-var tempo = 5000,
+var tempo = 6000,
     primeira = 0,
     images = document.querySelectorAll(".slide article")
     max = images.length;
