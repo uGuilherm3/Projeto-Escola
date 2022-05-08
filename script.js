@@ -7,7 +7,7 @@ btn.addEventListener('click', () => {
 const btn2 = document.querySelector('#bot2')
 
 btn2.addEventListener('click', () => {
-    window.scroll({top: window.innerHeight*3.7, behavior: "smooth"})
+    window.scroll({top: window.innerHeight*3.9, behavior: "smooth"})
 })
 
 //slide

@@ -41,6 +41,17 @@
     to{
         width: 100%;
     }
+}
+@keyframes back{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }    
 body{
     background-image: url(zback.jpg);
@@ -366,6 +377,7 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #140733;
 }
 .sec3:hover .borde{
     width: 2%;
@@ -374,8 +386,6 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 5px 5px rgb(247, 247, 247);
-    padding: 1% 0%;
     width: 100%;
 }
 .sec3 img{
@@ -385,23 +395,72 @@ article{
     width: 40%;
 }
 .sec3 h2{
-    color: #10403B;
+    color: #ffff;
     font-family: "whitb";
     font-size: 30px;
     text-align: center;
     margin-bottom: 5%;
 }
 .sec3 p{
-    color: #4C5958;
+    color: #ffff;
     font-family: "whit";
     font-size: 18px;
     text-align: center;
 }
 /*sec3-end*/
 
+/*sec4*/
+.transi{
+    height: 5vh;
+    background: linear-gradient(#140733,#0D0249);
+}
+.sec4{
+    overflow: hidden;
+    background-color: #0D0249;
+    height: 90vh;
+}
+.sec4-content{
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.sec4-text{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.sec4 h4{
+    text-align: center;
+    font-size: 30px;
+    font-family: "whitb";
+}
+.sec4 p{
+    text-align: center;
+    font-family: "whit";
+    font-size: 20px;
+}
+.sec4 a{
+    text-decoration: none;
+    font-family: "whit";
+    font-size: 17px;
+    color: #ffffff;
+    text-align: center;
+    padding: 2% 3%;
+    border-radius: 25px;
+    background: linear-gradient(45deg,#FFC900,#BB5FFF,#00E8D7);
+    background-size: 500%;
+    animation: back 10s ease infinite;
+}
+.sec4-content img{
+    width: 40%;
+}
 /*sec5*/
 .sec5{
-    margin-top: 1%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -409,35 +468,43 @@ article{
 .sec5:hover .borde{
     width: 2%;
 }
-.sec5 .apre{
-    width: 15%;
-    text-align: center;
-    padding: 2% 0;
-}
 .content2{
     display: flex;
     justify-content: center;
-}
-.sec5 h4{
-    color: #10403B;
-    font-family: "whitb";
-    font-size: 20px;
-    margin-bottom: 5%;
-}
-.sec5 p{
-    color: #4C5958;
-    font-family: "whit";
-    font-size: 18px;
+    gap: 5%;
 }
 .sec5 a{
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    transition: 0.5s ease;
+    padding: 0.5%;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px #f7f7f7,
+             -10px -10px 10px #fdfdfd;
+}
+.sec5 a:hover{
+    width: 320px;
+}
+.sec5 a:hover h4{
+    display: block;
+}
+.sec5 h4{
+    padding: 5%;
+    display: none;
+    color: #0D0249;
+    font-family: "whit";
 }
 .sec5 i{
-    color: #4C5958;
-    font-size: 60px;
+    font-size: 70px;
+    transition: 0.8s;
+    color: #0D0249;
 }
-.sec5 img{
-    width: 55%;
+.sec5 a:hover i{
+    transform: rotate(-360deg);
 }
 .b1-div{
     text-align: center;
@@ -454,7 +521,6 @@ article{
 
 /*sec6*/
 .sec6{
-    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -465,15 +531,16 @@ article{
 } 
 .sec6 img{
     width: 35%;
+    border-radius: 30% 40% 30% 40%;
 }
 .sec6 h4{
-    color: #10403B;
+    color: #0D0249;
     font-family: "whitb";
     font-size: 30px;
     margin-bottom: 5%;
 }
 .sec6 p{
-    color: #4C5958;
+    color: #0D0249;
     font-family: "whit";
     font-size: 18px;
 }
