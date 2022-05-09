@@ -35,6 +35,6 @@ var tempo = 6000,
 
 const btn3 = document.querySelector('.topo')
 
-btn2.addEventListener('click', () => {
-    window.scroll({top: 0, behavior: "smooth"})
+btn3.addEventListener('click', () => {
+    window.scrollTo({top: 0, behavior: "smooth"})
 })
