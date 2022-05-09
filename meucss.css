@@ -441,6 +441,7 @@ article{
     font-size: 20px;
     border-bottom: 0.1px solid;
     width: max-content;
+    margin-bottom: 3%;
 }
 .sec31 .content2{
     display: flex;
@@ -459,6 +460,8 @@ article{
     font-size: 18px;
     padding-right: 5%;
 }
+/*fim-sec3.1*/
+
 /*video*/
 .sec4{
     overflow: hidden;
