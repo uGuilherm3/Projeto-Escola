@@ -1,7 +1,7 @@
 const btn = document.querySelector('#bot')
 
 btn.addEventListener('click', () => {
-    window.scroll({top: window.innerHeight*2.19, behavior: "smooth"})
+    window.scroll({top: window.innerHeight*1.4, behavior: "smooth"})
 })
 
 const btn2 = document.querySelector('#bot2')
