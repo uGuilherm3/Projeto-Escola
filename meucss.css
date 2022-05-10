@@ -124,7 +124,7 @@ header{
 .menu-item:hover{
     transform: translateY(-5px);
     transition: transform 0.5s ease;
-    border-bottom: solid green;
+    border-bottom: 2px solid #F29325;
 }
 main{
     display: flex;
@@ -136,7 +136,7 @@ main{
 main a{
     text-decoration: none;
     color: white;
-    border: solid rgba(255, 255, 255, 0.658) 1px;
+    border: solid #ffff 1px;
     padding: 10px;
     padding-right: 15px;
     padding-left: 15px;
@@ -147,7 +147,7 @@ main a{
     clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
 }
 main a:hover {
-    color: green;
+    border: solid #F29325 1px;
 }
 main h2{
     font-family: 'whitb';
@@ -169,7 +169,7 @@ main h2{
     gap: 1%;
 }
 .sec1 h2{
-    color: #10403B;
+    color: #025259;
     font-family: "whitb";
     font-size: 30px;
     margin-bottom: 5%;
@@ -199,6 +199,7 @@ main h2{
 }
 .sec1 a:hover{
     clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+    color: #007172;
 }
 .sec1 i{
     font-size: 17px;
@@ -244,7 +245,7 @@ h3{
     width: 0.4%;
     border-radius: 5px;
     height: 5px;
-    background-color: #140733;
+    background-color: #007172;
     transition: 0.1s ease;
     margin-bottom: 1%;
     z-index: 1;
@@ -386,7 +387,6 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 .sec3:hover .borde{
     width: 2%;
@@ -405,6 +405,7 @@ article{
     width: 40%;
 }
 .sec3 h2{
+    color: #025259;
     font-family: "whitb";
     font-size: 30px;
     text-align: center;
@@ -436,7 +437,7 @@ article{
     flex-direction: column;
 }
 .sec31 .content h4{
-    color: #0B2B40;
+    color: #D94F04;
     font-family: "whitb";
     font-size: 20px;
     border-bottom: 0.1px solid;
@@ -451,6 +452,7 @@ article{
     width: 20%;
 }
 .sec31 .content2 h5{
+    color: #025259;
     font-family: "whitb";
     font-size: 25px;
     margin-bottom: 1%;
@@ -515,14 +517,16 @@ video{
     display: none;
     color: #0D0249;
     font-family: "whit";
+    color: #F29325;
 }
 .sec5 i{
     font-size: 70px;
     transition: 0.8s;
-    color: #0D0249;
+    color: #025259;
 }
 .sec5 a:hover i{
     transform: rotate(-360deg);
+    color: #D94F04;
 }
 .b1-div{
     text-align: center;
@@ -552,7 +556,7 @@ video{
     border-radius: 30% 40% 30% 40%;
 }
 .sec6 h4{
-    color: #0D0249;
+    color: #025259;
     font-family: "whitb";
     font-size: 30px;
     margin-bottom: 5%;
