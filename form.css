@@ -55,7 +55,7 @@ header{
     margin: 10px;
     padding: 3px;
     text-decoration: none;
-    color: rgb(11, 128, 0);
+    color: rgb(9, 105, 0);
     font-family: 'Poppins', sans-serif;
     font-weight: 100px;
     transform: translateY(0px);
@@ -63,7 +63,7 @@ header{
 .menu-item:hover{
     transform: translateY(-5px);
     transition: transform 0.5s ease;
-    border-bottom: solid green;
+    border-bottom: solid #F29325;
 }
 main{
     display: flex;
@@ -72,9 +72,10 @@ main{
     height: 100vh;
 }
 section{
-    margin-top: 5%;
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     overflow: hidden;
