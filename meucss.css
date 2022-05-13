@@ -457,27 +457,34 @@ h3{
 }
 .sec31 .princ{
     padding-bottom: 3%;
-    width: 40%;
+    width: 35%;
 }
-.sec31 .content{
-    width: 60%;
+.sec31-content{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 5%;
+    justify-content: center;
+    height: 50vh;
+}
+.sec31 .content{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
 }
 .sec31 .content h4{
     color: #D94F04;
     font-family: "whitb";
     font-size: 20px;
-    border-bottom: 0.1px solid;
     width: max-content;
+}
+.sec31 .content p{
+    font-family: "whit";
+    width: 100%;
 }
 .sec31 .content2{
     display: flex;
     align-items: center;
-}
-.sec31 .content2 img{
-    width: 20%;
 }
 .sec31 .content2 h5{
     color: #025259;
@@ -489,6 +496,9 @@ h3{
     font-family: "whit";
     font-size: 18px;
     padding-right: 5%;
+}
+.sec31 i{
+    font-size: 60px;
 }
 /*fim-sec3.1*/
 
