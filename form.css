@@ -16,54 +16,16 @@
     font-family: 'whit';
     src: url(whitneylight.otf);
 }
+@font-face {
+    font-family: "whitb";
+    src: url(whitneybold.otf);
+}
 body{
     background: linear-gradient(45deg,#121212, #4C5958,#10403B );
     background-size: 500%;
     animation: back 10s ease infinite;
     margin: 0%;
     height: 100vh;
-}
-header{
-    padding-top: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    position: absolute;
-}
-.div1{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: green;
-    font-family: 'Oswald', sans-serif;
-}
-.logo{
-    margin-left: 20%;
-    margin-right: 10px;
-    width: 60px;
-    border-radius: 50%;
-}
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: end;
-}
-.menu-item{
-    margin: 10px;
-    padding: 3px;
-    text-decoration: none;
-    color: rgb(9, 105, 0);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100px;
-    transform: translateY(0px);
-}
-.menu-item:hover{
-    transform: translateY(-5px);
-    transition: transform 0.5s ease;
-    border-bottom: solid #F29325;
 }
 main{
     display: flex;
@@ -72,7 +34,6 @@ main{
     height: 100vh;
 }
 section{
-    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +54,7 @@ section{
     width: 50%;
 }
 label{
-    font-family: "whit";
+    font-family: "whitb";
     font-size: 20px;
     padding: 3%;
 }
@@ -127,4 +88,16 @@ input:hover{
 }
 select:hover{
     box-shadow: 1px 1px 10px 1px rgb(230, 230, 230);
+}
+.btn2{
+    text-decoration: none;
+    color: #121212;
+    font-family: "whit";
+    box-shadow: 1px 1px 5px 1px rgb(235, 235, 235);
+    font-size: 17px;
+    padding: 4% 6%;
+    border-radius: 30px;
+}
+.btn2:hover{
+    box-shadow: 1px 1px 10px 3px rgb(235, 235, 235);
 }
