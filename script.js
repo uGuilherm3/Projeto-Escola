@@ -11,17 +11,17 @@ btn2.addEventListener('click', () => {
 })
 
 //slide
-var tempo = 6000,
+var tempo = 2000,
     primeira = 0,
-    images = document.querySelectorAll(".slide article")
-    max = images.length;
+    span = document.querySelectorAll(".mencoes span")
+    max = span.length;
 
     function proxima() {
-        images[primeira].classList.remove("selecionado")
+        span[primeira].classList.remove("selecionado")
         primeira++
         if(primeira >= max)
         primeira = 0
-        images[primeira].classList.add("selecionado")
+        span[primeira].classList.add("selecionado")
     }
 
     function inicio() {

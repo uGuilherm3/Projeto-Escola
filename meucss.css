@@ -599,7 +599,7 @@ video{
 }
 footer{
     background-color: #121212;
-    padding: 3%;
+    padding: 2% 1% 0.5%;
 }
 footer .roda{
     display: flex;
@@ -650,4 +650,16 @@ footer a:hover{
     font-size: 15px;
     font-family: "whit";
     margin-top: 2%;
+}
+.mencoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    color: #bfbfbf96;
+    font-family: "whit";
+    font-size: 15px;
+}
+.mencoes i{
+    color: rgb(255, 83, 83);
 }
