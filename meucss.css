@@ -525,6 +525,7 @@ video{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 1%;
 }
 .sec5:hover .borde{
     width: 2%;
@@ -586,14 +587,14 @@ video{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    flex-wrap: wrap;
+    margin-top: 1%;
 }
 .sec6 div{
-    width: 30%;
+    width: 30em;
 } 
 .sec6 img{
-    width: 35%;
-    border-radius: 30% 40% 30% 40%;
+    width: 30em;
 }
 .sec6 h4{
     color: #025259;
