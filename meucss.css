@@ -433,7 +433,7 @@ h3{
     flex-wrap: wrap;
 }
 .sec3 img{
-    min-width: 10em;
+    min-width: 100px;
     max-width: 600px;
     object-fit: cover;
 }
@@ -459,22 +459,11 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5%;
     flex-wrap: wrap;
     margin-top: 1%;
 }
-.sec31 .princ{
-    padding-bottom: 3%;
-    min-width: 400px;
-    max-width: 700px;
-}
-.sec31-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5%;
-}
-.sec31-content img{
+.sec31 img{
     width: 70%;
 }
 .conteudo{
@@ -490,14 +479,14 @@ h3{
     border-radius: 20px;
     transition: 0.3s ease;
     padding: 1%;
-    margin-bottom: 5%;
     overflow: hidden;
+    margin-bottom: 2%;
 }
 .conteudo:hover{
     transform: translateY(-2%);
     box-shadow: 16px 15px 0px 0px rgb(230, 230, 230);
 }
-.sec31-content p{
+.sec31 p{
     font-family: "whit";
     width: 100%;
     line-height: 1.400;
