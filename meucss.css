@@ -31,7 +31,7 @@
         width: 0px;
     }
     to{
-        width: 830px;
+        width: 930px;
     }
 }
 @keyframes  borda{
@@ -165,7 +165,7 @@ main a:hover {
 main h2{
     font-family: 'whitb';
     color: white;
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 800;
     border-right: solid white 2.5px;
     animation: piscar 1000ms infinite, texto steps(35) 3s 1s;
