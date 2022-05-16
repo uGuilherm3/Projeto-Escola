@@ -304,14 +304,11 @@ h3{
     width: 2.5%;
 }
 .cont{
-    max-width: 80em;
-    min-width: 40em;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 1% 2% 3%;
 }
 .sec2 h4{
     font-family: "whit";
@@ -380,6 +377,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin: 1% 0;
 }
 .mult{
     background-image: url(https://a-static.besthdwallpaper.com/multicolor-stripes-wallpaper-1920x1080-17130_48.jpg);
@@ -390,6 +388,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin: 1% 0;
 }
 .con{
     background-image: url(https://ze-robot.com/images/source/28935.jpg);
@@ -400,6 +399,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin: 1% 0;
 }
 .redes{
     background-image: url(https://i.pinimg.com/originals/11/1a/03/111a03133d14214539c96e0f657dff1a.png);
@@ -410,6 +410,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin: 1% 0;
 }
 /*sec2-end*/
 
