@@ -24,34 +24,38 @@ body{
     background: linear-gradient(45deg,#121212, #025951,#02735E,#038C3E);
     background-size: 500%;
     animation: back 10s ease infinite;
-    margin: 0%;
     height: 100vh;
+    margin: 0;
 }
 main{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     overflow: hidden;
+    width: 60em;
+    gap: 5%;
 }
 .div2{
-    width: 50%;
+    width: 25.8em;
     padding: 1%;
 }
 .form{
     display: flex;
     flex-direction: column;
-    margin-top: 17%
 }
 .img{
-    width: 50%;
+    width: 30em;
+    height: 40em;
+    object-fit: cover;
 }
 label{
     font-family: "whitb";
