@@ -96,7 +96,8 @@ header{
 }
 .logo{
     margin-left: 20%;
-    width: 60px;
+    min-width: 40px;
+    max-width: 60px;
     border-radius: 50%;
 }
 .menu{
