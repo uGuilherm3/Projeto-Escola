@@ -76,6 +76,7 @@ body{
     margin: 0%;
 }
 h1{
+    font-size: 3.5vmin;
     font-weight: 800;
 }
 header{
@@ -121,7 +122,6 @@ header{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'whit', sans-serif;
-    font-size: 17px;
     font-weight: 500;
 }
 .menu-item::after{
