@@ -104,7 +104,6 @@ header{
     width: 50%;
     display: flex;
     justify-content: center;
-    gap: 1%;
 }
 #bot{
     cursor: pointer;
@@ -175,7 +174,7 @@ main h2{
 }
 /*sec1*/
 .sec1{
-    margin-top: 2%;
+    margin-top: 1%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -224,14 +223,14 @@ main h2{
 .informa1{
     display: flex;
     align-items: center;
-    width: 40em;
+    width: 35em;
     padding: 3%;
     box-shadow: 1px 1px 5px 5px rgb(247, 247, 247);
 }
 .informa2{
     display: flex;
     align-items: center;
-    width: 40em;
+    width: 35em;
     padding: 3%;
     box-shadow: 1px 1px 5px 5px rgb(247, 247, 247);
 }
