@@ -224,14 +224,16 @@ main h2{
 .informa1{
     display: flex;
     align-items: center;
-    width: 35em;
+    min-width: 300px;
+    max-width: 500px;
     padding: 3%;
     box-shadow: 1px 1px 5px 5px rgb(247, 247, 247);
 }
 .informa2{
     display: flex;
     align-items: center;
-    width: 35em;
+    min-width: 300px;
+    max-width: 500px;
     padding: 3%;
     box-shadow: 1px 1px 5px 5px rgb(247, 247, 247);
 }
@@ -260,7 +262,7 @@ h3{
     height: 5px;
     background-color: #F29325;
     transition: 0.2s ease;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     z-index: 1;
 }
 /*titulo-end*/
@@ -277,6 +279,8 @@ h3{
     width: 50px;
 }
 .cont{
+    border: solid;
+    width: 74vw;
     margin: 0;
     padding: 0;
     display: flex;
@@ -343,47 +347,44 @@ h3{
 }
 .inf{
     background-image: url(https://i.pinimg.com/originals/94/32/cd/9432cdd515ab3d772334e471e230c211.jpg);
-    width: 23em;
+    width: 20em;
     background-size: cover;
     transition: 0.1s ease;
-    height: 35em;
+    height: 33em;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin: 1% 0;
+
 }
 .mult{
     background-image: url(https://a-static.besthdwallpaper.com/multicolor-stripes-wallpaper-1920x1080-17130_48.jpg);
-    width: 23em;
+    width: 20em;
     background-size: cover;
     transition: 0.1s ease;
-    height: 35em;
+    height: 33em;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin: 1% 0;
 }
 .con{
     background-image: url(https://ze-robot.com/images/source/28935.jpg);
-    width: 23em;
+    width: 20em;
     background-size: cover;
     transition: 0.1s ease;
-    height: 35em;
+    height: 33em;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin: 1% 0;
 }
 .redes{
     background-image: url(https://i.pinimg.com/originals/11/1a/03/111a03133d14214539c96e0f657dff1a.png);
-    width: 23em;
+    width: 20em;
     background-size: cover;
     transition: 0.1s ease;
-    height: 35em;
+    height: 33em;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin: 1% 0;
 }
 /*sec2-end*/
 
