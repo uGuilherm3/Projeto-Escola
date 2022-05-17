@@ -89,6 +89,7 @@ header{
 .div1{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     color: rgb(255, 255, 255);
     font-family: 'Oswald', sans-serif;
@@ -136,7 +137,7 @@ header{
     border-radius: 10px;
 }
 .menu-item:hover::after{
-    width: 100%;
+    width: 70%;
 }
 main{
     display: flex;
@@ -254,43 +255,15 @@ h3{
     z-index: 1;
 }
 .borde{
-    width: 0.4%;
+    width: 5px;
     border-radius: 5px;
     height: 5px;
     background-color: #F29325;
-    transition: 0.1s ease;
+    transition: 0.2s ease;
     margin-bottom: 1%;
     z-index: 1;
 }
 /*titulo-end*/
-/*titulo2*/
-.titulo2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin-top: 1%;
-    width: 100%;
-}
-.titulo2 h3{
-    color: #BFBFBF;
-    text-align: center;
-    font-family: "whit";
-    font-size: 35px;
-    font-weight: 100;
-    margin-bottom: 5px;
-    z-index: 1;
-}
-.borde2{
-    width: 0.4%;
-    border-radius: 5px;
-    height: 4px;
-    background-color: #8AA6A3;
-    transition: 0.1s ease;
-    margin-bottom: 1%;
-    z-index: 1;
-}
-/*titulo2-end*/
 
 /*sec2*/
 .sec2{
@@ -298,9 +271,10 @@ h3{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .sec2:hover .borde{
-    width: 2.5%;
+    width: 50px;
 }
 .cont{
     margin: 0;
@@ -315,7 +289,7 @@ h3{
     color: white;
     margin-bottom: 10%;
     opacity: 0;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 .sec2 .inf:hover h4{
     opacity: 1;
@@ -365,14 +339,14 @@ h3{
     color: white;
     margin-bottom: 10%;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .inf{
     background-image: url(https://i.pinimg.com/originals/94/32/cd/9432cdd515ab3d772334e471e230c211.jpg);
-    width: 20em;
+    width: 23em;
     background-size: cover;
     transition: 0.1s ease;
-    height: 30em;
+    height: 35em;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -380,10 +354,10 @@ h3{
 }
 .mult{
     background-image: url(https://a-static.besthdwallpaper.com/multicolor-stripes-wallpaper-1920x1080-17130_48.jpg);
-    width: 20em;
+    width: 23em;
     background-size: cover;
     transition: 0.1s ease;
-    height: 30em;
+    height: 35em;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -391,10 +365,10 @@ h3{
 }
 .con{
     background-image: url(https://ze-robot.com/images/source/28935.jpg);
-    width: 20em;
+    width: 23em;
     background-size: cover;
     transition: 0.1s ease;
-    height: 30em;
+    height: 35em;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -402,10 +376,10 @@ h3{
 }
 .redes{
     background-image: url(https://i.pinimg.com/originals/11/1a/03/111a03133d14214539c96e0f657dff1a.png);
-    width: 20em;
+    width: 23em;
     background-size: cover;
     transition: 0.1s ease;
-    height: 30em;
+    height: 35em;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -422,7 +396,7 @@ h3{
     gap: 5%;
 }
 .sec3:hover .borde{
-    width: 2.5%;
+    width: 50px;
 }
 .content1{
     display: flex;
@@ -459,7 +433,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    gap: 3%;
     flex-wrap: wrap;
     margin-top: 1%;
 }
@@ -467,7 +441,7 @@ h3{
     width: 70%;
 }
 .conteudo{
-    border: solid 0.1px rgb(196, 196, 196);
+    border: solid 0.1px rgb(216, 216, 216);
     box-shadow: 15px 15px 0px -3px rgb(221, 221, 221);
     display: flex;
     justify-content: center;
@@ -476,7 +450,7 @@ h3{
     text-align: center;
     width: 17em;
     height: 20em;
-    border-radius: 20px;
+    border-radius: 15px;
     transition: 0.3s ease;
     padding: 1%;
     overflow: hidden;
@@ -484,7 +458,7 @@ h3{
 }
 .conteudo:hover{
     transform: translateY(-2%);
-    box-shadow: 16px 15px 0px 0px rgb(230, 230, 230);
+    box-shadow: 16px 16px 0px 0px rgb(230, 230, 230);
 }
 .sec31 p{
     font-family: "whit";
@@ -517,12 +491,13 @@ video{
     padding-bottom: 1%;
 }
 .sec5:hover .borde{
-    width: 2%;
+    width: 40px;
 }
 .content2{
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 3%;
+    padding: 20px 0;
 }
 .sec5 a{
     text-decoration: none;
