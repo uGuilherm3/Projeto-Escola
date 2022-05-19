@@ -593,7 +593,7 @@ footer a{
     text-decoration: none;
     color: #BFBFBF;
     font-family: "whit";
-    font-size: min(15px,2.5vw);
+    font-size: min(15px,3vw);
 }
 footer a:hover{
     text-decoration: underline;
