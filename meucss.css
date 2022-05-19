@@ -182,7 +182,7 @@ main h2{
     gap: 1%;
 }
 .sec1 h2{
-    color: #025259;
+    color: #025935;
     font-family: "whitb";
     font-size: 30px;
     margin-bottom: 5%;
@@ -414,7 +414,7 @@ h3{
     width: 35em;
 }
 .sec3 h2{
-    color: #025259;
+    color: #025935;
     font-family: "whitb";
     font-size: 2.2em;
     text-align: center;
@@ -526,7 +526,7 @@ video{
 .sec5 i{
     font-size: 60px;
     transition: 0.8s;
-    color: #025259;
+    color: #025935;
 }
 .sec5 a:hover i{
     transform: rotate(-360deg);
@@ -560,13 +560,12 @@ video{
     width: 25em;
 }
 .sec6 h4{
-    color: #025259;
+    color: #025935;
     font-family: "whitb";
     font-size: 30px;
     margin-bottom: 5%;
 }
 .sec6 p{
-    color: #0D0249;
     font-family: "whit";
     font-size: 18px;
 }
