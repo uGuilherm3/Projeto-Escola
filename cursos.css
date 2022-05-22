@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "whit";
+}
+@font-face {
+    font-family: "whit";
+    src: url(whitneylight.otf);
+}
+@font-face {
+    font-family: "whitb";
+    src: url(whitneybold.otf);
+}
+@keyframes time {
+    100%{
+        width: 100%;
+    }
+}
+body{
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.logo{
+    width: min(60px, 10vw);
+}
+header a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header p{
+    font-size: min(30px, 5vw);
+    font-family: "whitb";
+    color: #025935;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.sec1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+article img{
+    position: absolute;
+    width: 0;
+    height: 30em;
+    object-fit: cover;
+    opacity: 0;
+    transition: width 1s ease;
+}
+img.select{
+    opacity: 1;
+    width: 45em;
+    object-fit: cover;
+}
+article{
+    width: 50em;
+    height: 30em;
+    overflow: hidden;
+    position: relative;
+}
+.sec1 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    width: 50em;
+    height: 30em;
+}
+.sec1 p{
+    position: relative;
+    width: max-content;
+    padding: 10px;
+}
+.sec1 p:hover{
+    background-color: rgb(240, 240, 240);
+}
+.especial::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    background-color: #F29325;
+    animation: time 4s ease infinite;
+}
+aside{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    background: linear-gradient(#ffff, rgb(230, 230, 230));
+}
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    padding: 2%;
+}
+.sec2{
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    width: 10em;
+    transform: rotate(15deg);
+}
+.informes{
+    display: flex;
+    background-color: #202020;
+    padding: 1%;
+    margin-top: 1%;
+    border-radius: 35px;
+}
+.sec2 .content1{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    gap: 1%;
+}
+.sec2 .content2{
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sec2 h3{
+    font-family: "whitb";
+}
+.sec3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.sec3 .content{
+    width: 20%;
+    display: flex;
+    flex-direction: column;   
+}
+.sec3 h3{
+    font-size: 30px;
+    font-family: "whitb";
+}
+.sec3 p{
+    font-size: 18px;
+    line-height: 1.500;
+}
+.sec4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    margin-top: 3%;
+    padding-bottom: 3%;
+}
+.sec4 .content{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    transition: 0.3s ease;
+}
+.sec4 .content:hover{
+    transform: translateY(-10px);
+}
+.sec4 img{
+    height: 23em;
+    width: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.sec4 .img1{
+    width: 400px;
+    opacity: 0;
+    position: absolute;
+    transition: 0.3s ease-in;
+}
+.sec4 .content .img1:hover{
+    opacity: 1;
+}
+.sec4 h3{
+    font-size: 23px;
+    font-family: "whit";
+    font-weight: 900;
+}
+.sec4 i{
+    font-size: 20px;
+}
+.sec4 p{
+    font-size: 17px;
+    margin-top: 1%;
+}
+.sec4 .content2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
