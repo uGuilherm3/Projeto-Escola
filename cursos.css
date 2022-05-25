@@ -16,6 +16,26 @@
         width: 100%;
     }
 }
+[data-anime]{
+    opacity: 0;
+    transition: 1s ease;
+}
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime="up"]{
+    transform: translate3d(0px, 50px, 0);
+}
+[data-anime="bot"]{
+    transform: translate3d(0px, -50px, 0px);
+}
+[data-anime].anima{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
 body{
 
 }
