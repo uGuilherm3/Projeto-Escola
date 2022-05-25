@@ -23,11 +23,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 10px;
     margin-left: 5%;
+    height: 10vh;
 }
 .logo{
     width: min(60px, 10vw);
+    border-radius: 50%;
 }
 header a{
     text-decoration: none;
@@ -38,105 +39,117 @@ header a{
 header p{
     font-size: min(30px, 5vw);
     font-family: "whitb";
-    color: #025935;
+    color: #ffffff;
 }
 main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5vh;
+
 }
 .sec1{
+    height: 90vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    margin-top: 5%;
-}
-article img{
-    position: absolute;
-    width: 0;
-    height: 30em;
-    object-fit: cover;
-    opacity: 0;
-    transition: width 1s ease;
-}
-img.select{
-    opacity: 1;
-    width: 45em;
-    object-fit: cover;
-}
-article{
-    width: 50em;
-    height: 30em;
-    overflow: hidden;
-    position: relative;
-}
-.sec1 .content{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 5%;
-    width: 50em;
-    height: 30em;
-}
-.sec1 p{
+    margin-left: 5%;
     position: relative;
-    width: max-content;
-    padding: 10px;
 }
-.sec1 p:hover{
-    background-color: rgb(240, 240, 240);
+.btn{
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 0.5% 1%;
+    color: #121212;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
 }
-.especial::after{
+h1{
+    color: #ffffff;
+    font-family: "whitb";
+    font-size: min(60px, 7vw);
+    width: 30%;
+}
+.video1{
     position: absolute;
-    content: "";
-    width: 0%;
-    left: 0;
-    bottom: -5px;
-    height: 3px;
-    background-color: #F29325;
-    animation: time 4s ease infinite;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
 aside{
-    margin-top: 3%;
+    transform: translateY(-90px);
     margin-bottom: 5%;
-    background: linear-gradient(#ffff, rgb(230, 230, 230));
 }
 .titulo{
     text-align: center;
     font-size: 30px;
-    padding: 2%;
+    padding: 1%;
+    position: relative;
+    margin-bottom: 1%;
+}
+.titulo::after{
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    background-color: #121212;
+    transition: 0.3s ease-in;
+}
+.titulo:hover::after{
+    width: 50px;
 }
 .sec2{
     display: flex;
     justify-content: center;
+    gap: 5%;
 }
-.icon{
-    width: 10em;
-    transform: rotate(15deg);
-}
-.informes{
-    display: flex;
-    background-color: #202020;
-    padding: 1%;
-    margin-top: 1%;
-    border-radius: 35px;
-}
-.sec2 .content1{
-    display: flex;
-    align-items: center;
-    width: 400px;
-    gap: 1%;
-}
-.sec2 .content2{
-    color: #ffff;
+.cards{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 300px;
+    padding: 1.5%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px 0px #e9e9e9;
+    transition: 0.5s ease;
+    cursor: default;
+}
+.cards:hover{
+    transform: translateY(-10px);
+}
+.cards img{
+    width: 50px;
+    border-radius: 42% 58% 48% 58%;
+}
+.icon1{
+    background-color: rgba(120, 151, 207, 0.432);
+}
+.icon2{
+    background-color: rgba(206, 207, 120, 0.432);
+}
+.icon3{
+    background-color: rgba(207, 169, 120, 0.432);
+}
+.sec2 .content{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    margin-bottom: 1%;
 }
 .sec2 h3{
     font-family: "whitb";
+    font-size: 23px;
+}
+.sec2 p{
+    line-height: 1.400;
 }
 .sec3{
     display: flex;
@@ -158,52 +171,214 @@ aside{
     line-height: 1.500;
 }
 .sec4{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.sec4 .content{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.sec4 h3{
+    font-size: 30px;
+    font-family: "whitb";
+}
+.sec4 p{
+    font-size: 18px;
+    line-height: 1.500;
+}
+.graficos{
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    width: 300px;
+}
+.sec4 .content2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 5%;
+    box-shadow: 0px 0px 10px 1px rgba(120, 151, 207, 0.274);
+    transition: 0.2s ease;
+}
+.sec4 .content2:hover{
+    transform: scale(105%);
+    box-shadow: 0px 0px 10px 5px rgba(120, 151, 207, 0.274);
+}
+.sec4 h4{
+    font-size: 50px;
+    font-family: "whitb";
+    color: transparent;
+    background: linear-gradient(45deg,rgb(120, 151, 207), rgb(150, 225, 255));
+    -webkit-background-clip: text;
+}
+/*sec5*/
+.sec5{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1%;
     margin-top: 3%;
-    padding-bottom: 3%;
 }
-.sec4 .content{
+.sec5 .content{
     display: flex;
     flex-direction: column;
     width: 400px;
     transition: 0.3s ease;
 }
-.sec4 .content:hover{
+.sec5 .content:hover{
     transform: translateY(-10px);
 }
-.sec4 img{
+.sec5 img{
     height: 23em;
     width: 400px;
     border-radius: 20px;
     object-fit: cover;
 }
-.sec4 .img1{
+.sec5 .img1{
     width: 400px;
     opacity: 0;
     position: absolute;
     transition: 0.3s ease-in;
 }
-.sec4 .content .img1:hover{
+.sec5 .content .img1:hover{
     opacity: 1;
 }
-.sec4 h3{
+.sec5 h3{
     font-size: 23px;
     font-family: "whit";
     font-weight: 900;
 }
-.sec4 i{
+.sec5 i{
     font-size: 20px;
 }
-.sec4 p{
+.sec5 p{
     font-size: 17px;
     margin-top: 1%;
 }
-.sec4 .content2{
+.sec5 .content2{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 5%;
+}
+.sec6{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+}
+.sec6:hover .titulo::after{
+    width: 50px;
+}
+.feedbacks{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1%;
+}
+.feed{
+    width: 20em;
+    padding: 1.5%;
+    box-shadow: 0px 0px 3px 3px rgba(120, 151, 207, 0.158);
+    cursor: default;
+}
+.feed:hover{
+    box-shadow: 0px 0px 3px 5px rgba(120, 151, 207, 0.158);
+}
+.feed img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.feed .content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.feed h4{
+    font-size: 20px;
+}
+.feed p{
+    margin-top: 15px;
+}
+.feed i{
+    font-size: 10px;
+}
+.feed .content2{
+    width: 60%;
+    text-align: end;
+}
+.sec7{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+.profs{
+    display: flex;
+    gap: 1%;
+    box-shadow: 0px 0px 3px 3px rgba(120, 151, 207, 0.158);
+}
+.profs img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+.profs .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+}
+.profs h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.profs .content2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 0;
+    opacity: 0;
+    padding: 1%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+.profs:hover .content2{
+    width: 300px;
+    opacity: 1;
+}
+.profs p{
+}
+.profs h5{
+    font-size: 17px;
+    font-weight: 900;
+}
+.profs .content3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.profs i{
+    font-size: 25px;
+    text-decoration: none;
+}
+.profs a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #121212;
 }
