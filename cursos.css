@@ -106,7 +106,7 @@ aside{
     font-size: 30px;
     padding: 1%;
     position: relative;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 .titulo::after{
     position: absolute;
@@ -126,6 +126,7 @@ aside{
 .sec2{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 5%;
 }
 .cards{
@@ -139,6 +140,7 @@ aside{
     box-shadow: 0px 2px 3px 0px #e9e9e9;
     transition: 0.5s ease;
     cursor: default;
+    margin-bottom: 1%;
 }
 .cards:hover{
     transform: translateY(-10px);
@@ -292,7 +294,6 @@ aside{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 1%;
     background-image: url(imgs/back.jpg);
     padding-bottom: 30vh;
     transform: translateY(100px);

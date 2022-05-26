@@ -370,6 +370,9 @@ h3{
     opacity: 1;
     transform: translateY(-15px);
 }
+.sec2 a{
+    text-decoration: none;
+}
 .sec2 i{
     color: white;
     margin-bottom: 10%;
