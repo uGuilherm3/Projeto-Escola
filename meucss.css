@@ -594,7 +594,8 @@ video{
     width: 30em;
 } 
 .sec6 img{
-    width: 25em;
+    width: 30em;
+    border-radius: 15px;
 }
 .sec6 h4{
     color: #025935;
