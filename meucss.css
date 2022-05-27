@@ -83,7 +83,7 @@ header{
     width: 100%;
     height: 10vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 4%;
     flex-wrap: wrap;
@@ -184,16 +184,25 @@ main a{
     color: white;
     border: solid #ffff 1px;
     padding: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'whit';
     font-weight: 800;
     margin-top: 1%;
     clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.5s ease;
 }
 main a:hover {
     border: solid #F29325 1px;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 100%, 0% 100%, 0 100%);
+}
+main i{
+    transition: 1s;
+}
+main a:hover i{
+    color: #F29325;
 }
 main h2{
     font-family: Arial, Helvetica, sans-serif;
@@ -270,7 +279,6 @@ main h2{
     padding: 3%;
     box-shadow: 1px 1px 5px 5px rgb(247, 247, 247);
 }
-/*sec1-end*/
 
 /*titulo*/
 .titulo{
@@ -294,7 +302,7 @@ h3{
     border-radius: 5px;
     height: 5px;
     background-color: #F29325;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease;
     margin-bottom: 2%;
     z-index: 1;
 }
@@ -421,7 +429,6 @@ h3{
     justify-content: center;
     align-items: flex-end;
 }
-/*sec2-end*/
 
 /*sec3*/
 .sec3{
