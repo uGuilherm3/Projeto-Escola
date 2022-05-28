@@ -579,7 +579,7 @@ video{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5%;
+    gap: 10%;
     flex-wrap: wrap;
     margin-top: 1%;
 }
@@ -597,6 +597,30 @@ video{
     font-size: min(35px, 7vw);
 }
 .sec6 p{
+    font-family: "whit";
+    font-size: min(18px, 5vw);
+    margin-bottom: 5px;
+}
+.sec7{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sec7 img{
+    width: min(30em, 90vw);
+    border-radius: 15px;
+}
+.sec7 .content{
+    width: 25em;
+}
+.sec7 h4{
+    color: #025935;
+    font-family: "whitb";
+    font-size: min(35px, 7vw);
+}
+.sec7 p{
     font-family: "whit";
     font-size: min(18px, 5vw);
     margin-bottom: 5px;
