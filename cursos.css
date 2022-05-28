@@ -308,11 +308,13 @@ aside{
 /*feedbacks*/
 .sec6{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     background-image: url(imgs/back.jpg);
-    height: 50vh;
+    background-attachment: fixed;
     margin-top: 1.5%;
+    padding: 2%;
 }
 .sec6:hover .titulo::after{
     width: 50px;
@@ -364,7 +366,7 @@ aside{
     justify-content: center;
     flex-wrap: wrap;
     gap: 3%;
-    transform: translateY(-20%);
+    margin-top: 1%;
 }
 .profs{
     display: flex;
