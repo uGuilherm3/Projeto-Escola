@@ -647,6 +647,7 @@ footer .roda{
     font-size: min(15px, 2.5vw);
 }
 footer a{
+    white-space: nowrap;
     text-decoration: none;
     color: #BFBFBF;
     font-family: "whit";
