@@ -661,7 +661,20 @@ footer a:hover{
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: 1%; 
+    margin-top: 2%; 
+    position: relative;
+}
+.rodape::after{
+    position: absolute;
+    content: "";
+    height: 0.1px;
+    width: 10%;
+    top: -90%;
+    background-color: #BFBFBF;
+    transition: 0.4s ease;
+}
+footer:hover .rodape::after{
+    width: 50%;
 }
 .rodape i{
     color: #BFBFBF;
