@@ -305,13 +305,13 @@ aside{
     justify-content: space-between;
     margin-top: 5%;
 }
+/*feedbacks*/
 .sec6{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     background-image: url(imgs/back.jpg);
-    padding-bottom: 30vh;
+    height: 50vh;
     margin-top: 1.5%;
 }
 .sec6:hover .titulo::after{
@@ -364,7 +364,7 @@ aside{
     justify-content: center;
     flex-wrap: wrap;
     gap: 3%;
-    transform: translateY(-15%);
+    transform: translateY(-20%);
 }
 .profs{
     display: flex;
