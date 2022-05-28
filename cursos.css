@@ -180,7 +180,7 @@ aside{
     gap: 5%;
 }
 .sec3 img{
-    width: 30em;
+    width: min(30em,90vw);
     margin-bottom: 15px;
 }
 .sec3 .content{
@@ -257,7 +257,6 @@ aside{
     margin-top: 3%;
 }
 .sec5 .content{
-    padding: 0.5%;
     display: flex;
     flex-direction: column;
     width: 350px;
@@ -272,11 +271,11 @@ aside{
 }
 .sec5 img{
     height: 20em;
-    width: 350px;
+    width: 340px;
     object-fit: cover;
 }
 .sec5 .img1{
-    width: 350px;
+    width: 340px;
     opacity: 0;
     position: absolute;
     transition: 0.3s ease-in;
@@ -313,7 +312,7 @@ aside{
     align-items: center;
     background-image: url(imgs/back.jpg);
     padding-bottom: 30vh;
-    transform: translateY(100px);
+    margin-top: 1.5%;
 }
 .sec6:hover .titulo::after{
     width: 50px;
@@ -365,7 +364,7 @@ aside{
     justify-content: center;
     flex-wrap: wrap;
     gap: 3%;
-    transform: translateY(-100px);
+    transform: translateY(-15%);
 }
 .profs{
     display: flex;
