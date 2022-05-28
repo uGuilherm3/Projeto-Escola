@@ -85,7 +85,7 @@ header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 4%;
+    gap: 5%;
     flex-wrap: wrap;
 }
 .div1{
@@ -95,7 +95,7 @@ header{
     gap: 5px;
     color: rgb(255, 255, 255);
     font-family: 'Oswald', sans-serif;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 .logo{
     margin-left: 20%;
@@ -129,7 +129,7 @@ header{
     position: absolute;
     content: "";
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #F29325;
     bottom: -5px;
     left: 50%;
@@ -138,39 +138,7 @@ header{
     border-radius: 10px;
 }
 .menu-item:hover::after{
-    width: 70%;
-}
-.div2{
-    display: flex;
-    align-items: center;
-    justify-content: end;
     width: 50%;
-}
-.div2 a{
-    text-decoration: none;
-    color: #fff;
-    font-family: "whit";
-    font-weight: 500;
-    padding: 0.7% 2%;
-    margin: 2%;
-    border: solid 0.1px rgba(255, 255, 255, 0.575);
-    position: relative;
-    z-index: 1;
-    font-size: min(15px, 4vw);
-}
-.div2 a::after{
-    position: absolute;
-    content: "";
-    background-color: #F29325;
-    height: 100%;
-    width: 0%;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    transition: 0.3s ease-in;
-}
-.div2 a:hover::after{
-    width: 100%;
 }
 main{
     display: flex;
