@@ -537,7 +537,7 @@ video{
     padding: 0.5%;
     overflow: hidden;
     border-radius: 50px;
-    box-shadow: 10px 10px 10px #f7f7f7,
+    box-shadow: 10px 10px 10px #f3f3f3,
              -10px -10px 10px #fdfdfd;
 }
 .sec5 a:hover{
@@ -639,7 +639,7 @@ footer .roda{
     width: 100%;
 }
 .itens{
-    width: 20%;
+    width: 15%;
 }
 .item{
     padding: 1%;
@@ -653,6 +653,7 @@ footer a{
     font-size: min(15px,2.5vw);
 }
 footer a:hover{
+    color: #ffffff;
     text-decoration: underline;
 }
 .rodape{
@@ -668,7 +669,7 @@ footer a:hover{
     cursor: pointer;
 }
 .rodape i:hover{
-    color: #8AA6A3;
+    color: #ffffff;
 }
 .fim{
     color: #BFBFBF;
