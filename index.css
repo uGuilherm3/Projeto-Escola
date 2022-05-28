@@ -465,18 +465,51 @@ h3{
 /*video*/
 .sec4{
     margin-top: 3%;
-    overflow: hidden;
     height: 80vh;
+    position: relative;
 }
-.sec4-content{
-    height: 60vh;
+.sec4 .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 5%;
 }
 video{
     position: absolute;
     z-index: -1;
-    height: 75vh;
+    height: 100%;
     width: 100%;
     object-fit: cover;
+}
+.sec4 h3{
+    font-family: "whitb";
+    color: #ffff;
+    font-size: min(35px, 8vw);
+}
+.sec4 a{
+    text-decoration: none;
+    color: #ffff;
+    font-family: "whit";
+    padding: 10px;
+    border-top: solid 0.1px #ffff;
+    font-size: min(16px, 4vw);
+    position: relative;
+}
+.sec4 a::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #F29325;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    transition: 0.3s ease;
+}
+.sec4 a:hover::after{
+    width: 80%;
 }
 /*sec5*/
 .sec5{
@@ -498,8 +531,8 @@ video{
     text-decoration: none;
     display: flex;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: min(60px, 10vw);
+    height: min(60px, 10vw);
     transition: 0.5s ease;
     padding: 0.5%;
     overflow: hidden;
@@ -508,7 +541,7 @@ video{
              -10px -10px 10px #fdfdfd;
 }
 .sec5 a:hover{
-    width: 320px;
+    width: 350px;
 }
 .sec5 a:hover h4{
     display: block;
@@ -520,7 +553,7 @@ video{
     color: #F29325;
 }
 .sec5 i{
-    font-size: 60px;
+    font-size: min(60px, 10vw);
     transition: 0.5s;
     color: #025935;
 }
