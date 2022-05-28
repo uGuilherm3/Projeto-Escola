@@ -606,7 +606,7 @@ video{
     justify-content: center;
     gap: 10%;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 .sec7 img{
     width: min(30em, 90vw);
@@ -614,6 +614,7 @@ video{
 }
 .sec7 .content{
     width: 25em;
+    padding: 15px;
 }
 .sec7 h4{
     color: #025935;
