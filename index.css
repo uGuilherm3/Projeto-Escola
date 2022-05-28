@@ -77,6 +77,7 @@ header{
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    margin-left: 5%;
 }
 .div1{
     display: flex;
@@ -170,7 +171,7 @@ main h2{
     white-space: nowrap;
     height: max-content;
 }
-/*sec1*/
+/*introdução*/
 .sec1{
     margin-top: 1%;
     display: flex;
@@ -181,7 +182,7 @@ main h2{
 .sec1 h2{
     color: #025935;
     font-family: "whitb";
-    font-size: 30px;
+    font-size: min(30px, 7vw);
     margin-bottom: 5%;
 }
 .sec1 p{
@@ -405,24 +406,20 @@ h3{
     flex-wrap: wrap;
 }
 .sec3 img{
-    min-width: 100px;
-    max-width: 600px;
+    width: min(30em, 90vw);
     object-fit: cover;
 }
 .sec3 .content{
-    width: 35em;
+    width: 25em;
 }
 .sec3 h2{
     color: #025935;
     font-family: "whitb";
-    font-size: 2.2em;
-    text-align: center;
-    margin-bottom: 5%;
+    font-size: min(35px, 8vw);
 }
 .sec3 p{
     font-family: "whit";
-    font-size: 1.2em;
-    text-align: center;
+    font-size: min(18px, 5vw);
 }
 /*sec3-end*/
 
@@ -554,7 +551,8 @@ video{
     margin-top: 1%;
 }
 .sec6 div{
-    width: 20em;
+    width: 25em;
+    padding: 15px;
 } 
 .sec6 img{
     width: min(30em, 90vw);
@@ -563,12 +561,11 @@ video{
 .sec6 h4{
     color: #025935;
     font-family: "whitb";
-    font-size: 30px;
+    font-size: min(35px, 7vw);
 }
 .sec6 p{
     font-family: "whit";
-    font-size: 18px;
-    line-height: 1.500;
+    font-size: min(18px, 5vw);
     margin-bottom: 5px;
 }
 footer{
