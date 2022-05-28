@@ -626,25 +626,24 @@ video{
     font-size: min(18px, 5vw);
     margin-bottom: 5px;
 }
+/*footer*/
 footer{
     background-color: #121212;
-    padding: 2% 1% 0.5%;
+    padding: 1%;
     margin-top: 1%;
 }
 footer .roda{
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 20%;
-}
-footer div{
-    display: flex;
-    gap: 25px;
     width: 100%;
 }
 .itens{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 15%;
+}
+.item{
+    padding: 1%;
+    margin: 10px;
 }
 footer a{
     text-decoration: none;
@@ -654,13 +653,6 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
-}
-.border{
-    background-color: #BFBFBF;
-    height: 1px;
-    width: 20%;
-    margin-top: 0.5%;
-    border-radius: 5px;
 }
 .rodape{
     display: flex;
@@ -678,19 +670,14 @@ footer a:hover{
     color: #8AA6A3;
 }
 .fim{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     color: #BFBFBF;
-    font-size: 15px;
-    font-family: "whit";
-    margin-top: 2%;
 }
 .mencoes{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
     margin-top: 2%;
     color: #bfbfbf96;
     font-family: "whit";
@@ -698,4 +685,7 @@ footer a:hover{
 }
 .mencoes i{
     color: rgb(255, 83, 83);
+}
+#icon1{
+    color: #BFBFBF;
 }
