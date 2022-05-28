@@ -147,7 +147,8 @@ aside{
 }
 .cards img{
     width: 50px;
-    border-radius: 42% 58% 48% 58%;
+    padding: 1%;
+    border-radius: 62% 58% 80% 48%;
 }
 .icon1{
     background-color: rgba(120, 151, 207, 0.432);
