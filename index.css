@@ -629,7 +629,7 @@ video{
 /*footer*/
 footer{
     background-color: #121212;
-    padding: 1%;
+    padding: 10px;
     margin-top: 1%;
 }
 footer .roda{
@@ -639,17 +639,18 @@ footer .roda{
     width: 100%;
 }
 .itens{
-    width: 15%;
+    width: 20%;
 }
 .item{
     padding: 1%;
     margin: 10px;
+    font-size: min(15px, 2.5vw);
 }
 footer a{
     text-decoration: none;
     color: #BFBFBF;
     font-family: "whit";
-    font-size: min(15px,3vw);
+    font-size: min(15px,2.5vw);
 }
 footer a:hover{
     text-decoration: underline;
@@ -681,7 +682,7 @@ footer a:hover{
     margin-top: 2%;
     color: #bfbfbf96;
     font-family: "whit";
-    font-size: 15px;
+    font-size: min(15px,2.5vw);;
 }
 .mencoes i{
     color: rgb(255, 83, 83);
