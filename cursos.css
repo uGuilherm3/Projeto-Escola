@@ -90,7 +90,7 @@ h1{
     font-size: min(60px, 7vw);
     width: 30%;
 }
-.video1{
+.video{
     position: absolute;
     top: 0;
     width: 100%;
@@ -112,7 +112,7 @@ aside{
     content: "";
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
+    bottom: -5px;
     height: 5px;
     width: 5px;
     border-radius: 5px;
