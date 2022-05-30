@@ -226,16 +226,14 @@ main h2{
 .informa1{
     display: flex;
     align-items: center;
-    min-width: 300px;
-    max-width: 600px;
+    width: max(23em, 30vw);
     padding: 3%;
     box-shadow: 1px 1px 5px 5px rgb(247, 247, 247);
 }
 .informa2{
     display: flex;
     align-items: center;
-    min-width: 300px;
-    max-width: 600px;
+    width: max(23em, 30vw);
     padding: 3%;
     box-shadow: 1px 1px 5px 5px rgb(247, 247, 247);
 }
