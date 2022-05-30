@@ -306,16 +306,18 @@ aside{
     justify-content: space-between;
     margin-top: 5%;
 }
+.back{
+    background-image: url(imgs/back.jpg);
+    background-attachment: fixed;
+}
 /*feedbacks*/
 .sec6{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: url(imgs/back.jpg);
-    background-attachment: fixed;
     margin-top: 1.5%;
-    padding: 2%;
+    padding: 1%;
 }
 .sec6:hover .titulo::after{
     width: 50px;
