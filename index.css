@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "whit";
 }
 @font-face {
     font-family: 'whit';
@@ -68,6 +69,7 @@ body{
     margin: 0%;
 }
 h1{
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: min(35px, 5vw);
 }
@@ -126,7 +128,7 @@ header{
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    transition: 0.3s ease;
+    transition: 0.4s ease;
     border-radius: 10px;
 }
 .menu-item:hover::after{
@@ -177,22 +179,22 @@ main h2{
 }
 /*introdução*/
 .sec1{
-    margin-top: 1%;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1%;
 }
 .sec1 h2{
-    color: #025935;
+    color: #000;
     font-family: "whitb";
     font-size: min(30px, 7vw);
     margin-bottom: 5%;
 }
 .sec1 p{
-    color: #4C5958;
+    color: #121212;
     font-family: "whit";
-    font-size: 18px;
+    font-size: min(17px, 4vw);
     margin-bottom: 5%;
 }
 .sec1 a{
@@ -200,7 +202,6 @@ main h2{
     display: flex;
     align-items: center;
     gap: 3px;
-    color: #127369;
     font-family: "whit";
     font-size: 15px;
 }
@@ -256,9 +257,9 @@ h3{
     z-index: 1;
 }
 .borde{
-    width: 5px;
+    width: 4px;
+    height: 4px;
     border-radius: 5px;
-    height: 5px;
     background-color: #F29325;
     transition: 0.3s ease;
     margin-bottom: 2%;
@@ -349,40 +350,40 @@ h3{
 }
 .inf{
     background-image: url(https://i.pinimg.com/originals/94/32/cd/9432cdd515ab3d772334e471e230c211.jpg);
-    width: max(20vw, 160px);
+    width: min(23em, 50vw);
     background-size: cover;
     transition: 0.1s ease;
-    height: max(30vw, 300px);
+    height: min(33em, 70vh);
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 .mult{
     background-image: url(https://a-static.besthdwallpaper.com/multicolor-stripes-wallpaper-1920x1080-17130_48.jpg);
-    width: max(20vw, 160px);
+    width: min(23em, 50vw);
     background-size: cover;
     transition: 0.1s ease;
-    height: max(30vw, 300px);
+    height: min(33em, 70vh);
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 .con{
     background-image: url(https://ze-robot.com/images/source/28935.jpg);
-    width: max(20vw, 160px);
+    width: min(23em, 50vw);
     background-size: cover;
     transition: 0.1s ease;
-    height: max(30vw, 300px);
+    height: min(33em, 70vh);
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 .redes{
     background-image: url(https://i.pinimg.com/originals/11/1a/03/111a03133d14214539c96e0f657dff1a.png);
-    width: max(20vw, 160px);
+    width: min(23em, 50vw);
     background-size: cover;
     transition: 0.1s ease;
-    height: max(30vw, 300px);
+    height: min(33em, 70vh);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -415,7 +416,6 @@ h3{
     width: 25em;
 }
 .sec3 h2{
-    color: #025935;
     font-family: "whitb";
     font-size: min(35px, 8vw);
 }
@@ -451,7 +451,7 @@ h3{
     transition: 0.3s ease;
     padding: 1%;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .conteudo:hover{
     transform: translateY(-2%);
@@ -513,6 +513,7 @@ video{
 .sec4 a:hover::after{
     width: 80%;
 }
+
 /*sec5*/
 .sec5{
     display: flex;
@@ -543,25 +544,26 @@ video{
              -10px -10px 10px #fdfdfd;
 }
 .sec5 a:hover{
-    width: 350px;
+    width: 360px;
 }
 .sec5 a:hover h4{
     display: block;
 }
 .sec5 h4{
+    white-space: nowrap;
     padding: 5%;
     display: none;
     font-family: "whit";
-    color: #F29325;
+    color: #000;
 }
 .sec5 i{
     font-size: min(60px, 10vw);
     transition: 0.5s;
-    color: #025935;
+    color: #000;
 }
 .sec5 a:hover i{
     transform: rotate(-360deg);
-    color: #D94F04;
+    color: #025935;
 }
 .b1-div{
     text-align: center;
@@ -574,7 +576,6 @@ video{
     height: 0.1px;
     background-color: #BFBFBF;
 }
-/*sec5-end*/
 
 /*sec6*/
 .sec6{
