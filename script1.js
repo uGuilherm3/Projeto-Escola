@@ -16,3 +16,9 @@ function rolar() {
 window.addEventListener('scroll', function() {
     rolar();
 })
+
+const btn = document.querySelector('.topo')
+
+btn.addEventListener('click', () => {
+    window.scrollTo({top: 0, behavior: "smooth"})
+})

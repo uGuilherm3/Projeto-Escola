@@ -27,14 +27,6 @@
         width: min(1050px, 85vw);
     }
 }
-@keyframes  borda{
-    from{
-        width: 0;
-    }
-    to{
-        width: 100%;
-    }
-}
 @keyframes back{
     0%{
         background-position: 0% 50%;
@@ -60,6 +52,14 @@
         clip-path: polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%);
     }
 }    
+@keyframes balancar {
+    0%{
+        transform: translateX(3px);
+    }
+    100%{
+        transform: translateX(-3px);
+    }
+}
 body{
     background-image: url(imgs/zback.jpg);
     background-size: cover;
@@ -165,6 +165,7 @@ main i{
 }
 main a:hover i{
     color: #F29325;
+    animation: balancar 0.3s ease-in infinite alternate;
 }
 main h2{
     font-family: Arial, Helvetica, sans-serif;
@@ -192,7 +193,7 @@ main h2{
     margin-bottom: 5%;
 }
 .sec1 p{
-    color: #121212;
+    color: #000000;
     font-family: "whit";
     font-size: min(17px, 4vw);
     margin-bottom: 5%;
@@ -210,7 +211,7 @@ main h2{
     border: solid 0.1px;
     color: #121212;
     padding: 1%;
-    clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
+    clip-path: polygon(0 0, 90% 0, 100% 35%, 100% 100%, 10% 100%, 0 65%);
     transition: 0.5s ease;
 }
 .sec1 a:hover{
@@ -227,44 +228,41 @@ main h2{
 .informa1{
     display: flex;
     align-items: center;
-    width: max(23em, 30vw);
+    width: max(23em, 33vw);
     padding: 3%;
     box-shadow: 1px 1px 5px 5px rgb(247, 247, 247);
 }
 .informa2{
     display: flex;
     align-items: center;
-    width: max(23em, 30vw);
+    width: max(23em, 33vw);
     padding: 3%;
     box-shadow: 1px 1px 5px 5px rgb(247, 247, 247);
 }
 /*titulo*/
 .titulo{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
     width: 100%;
     margin-top: 1%;
-}
-h3{
-    text-align: center;
     font-family: "whit";
     font-size: 35px;
-    font-weight: 100;
-    margin-bottom: 5px;
-    z-index: 1;
+    font-weight: 100;   
 }
-.borde{
-    width: 4px;
-    height: 4px;
+.titulo::after{
+    position: absolute;
+    content: "";
+    bottom: -10px;
     border-radius: 5px;
+    height: 4px;
+    width: 4px;
     background-color: #F29325;
     transition: 0.3s ease;
-    margin-bottom: 2%;
-    z-index: 1;
 }
-/*sec2*/
+/*cursos*/
 .sec2{
     display: flex;
     justify-content: center;
@@ -272,7 +270,7 @@ h3{
     flex-direction: column;
     flex-wrap: wrap;
 }
-.sec2:hover .borde{
+.sec2:hover .titulo::after{
     width: 50px;
 }
 .sec2 .content{
@@ -281,7 +279,7 @@ h3{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .sec2 h4{
     font-family: "whit";
@@ -347,40 +345,40 @@ h3{
 }
 .inf{
     background-image: url(https://i.pinimg.com/originals/94/32/cd/9432cdd515ab3d772334e471e230c211.jpg);
-    width: min(300px, 50vw);
+    width: max(300px, 20vw);
+    height: max(450px, 60vh);
     background-size: cover;
     transition: 0.1s ease;
-    height: min(470px, 70vh);
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 .mult{
     background-image: url(https://a-static.besthdwallpaper.com/multicolor-stripes-wallpaper-1920x1080-17130_48.jpg);
-    width: min(300px, 50vw);
+    width: max(300px, 20vw);
+    height: max(450px, 60vh);
     background-size: cover;
     transition: 0.1s ease;
-    height: min(470px, 70vh);
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 .con{
     background-image: url(https://ze-robot.com/images/source/28935.jpg);
-    width: min(300px, 50vw);
+    width: max(300px, 20vw);
+    height: max(450px, 60vh);
     background-size: cover;
     transition: 0.1s ease;
-    height: min(470px, 70vh);
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 .redes{
     background-image: url(https://i.pinimg.com/originals/11/1a/03/111a03133d14214539c96e0f657dff1a.png);
-    width: min(300px, 50vw);
+    width: max(300px, 20vw);
+    height: max(450px, 60vh);
     background-size: cover;
     transition: 0.1s ease;
-    height: min(470px, 70vh);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -394,7 +392,7 @@ h3{
     align-items: center;
     gap: 5%;
 }
-.sec3:hover .borde{
+.sec3:hover .titulo::after{
     width: 50px;
 }
 .content1{
@@ -411,6 +409,25 @@ h3{
 }
 .sec3 .content{
     width: 25em;
+}
+.sec3 a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    font-weight: 700;
+}
+.sec3 a::after{
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #F29325;
+    transition: 0.5s ease;
+}
+.sec3 a:hover::after{
+    width: 100%;
 }
 .sec3 h2{
     color: #025935;
@@ -434,8 +451,8 @@ h3{
     width: 70%;
 }
 .conteudo{
-    border: solid 0.1px rgb(216, 216, 216);
-    box-shadow: 15px 15px 0px -3px rgb(221, 221, 221);
+    box-shadow: 10px 10px 10px #f3f3f3,
+             -10px -10px 10px #fafafa;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -447,11 +464,13 @@ h3{
     transition: 0.3s ease;
     padding: 1%;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    cursor: default;
 }
 .conteudo:hover{
-    transform: translateY(-2%);
-    box-shadow: 16px 16px 0px 0px rgb(230, 230, 230);
+    transform: translateY(-3%);
+    box-shadow: 15px 15px 15px #eeeeee,
+             -15px -15px 15px #f7f7f7;
 }
 .sec31 p{
     font-family: "whit";
@@ -483,6 +502,7 @@ video{
     font-family: "whitb";
     color: #ffff;
     font-size: min(35px, 8vw);
+    padding: 10px;
 }
 .sec4 a{
     text-decoration: none;
@@ -507,17 +527,18 @@ video{
 .sec4 a:hover::after{
     width: 80%;
 }
-/*sec5*/
+/*redes sociais*/
 .sec5{
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-bottom: 1%;
 }
-.sec5:hover .borde{
+.sec5:hover .titulo::after{
     width: 50px;
 }
 .content2{
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     gap: 3%;
@@ -552,11 +573,11 @@ video{
 .sec5 i{
     font-size: min(60px, 10vw);
     transition: 0.5s;
-    color: #000;
+    color: #025935;
 }
 .sec5 a:hover i{
     transform: rotate(-360deg);
-    color: #025935;
+    color: #000000;
 }
 .b1-div{
     text-align: center;
@@ -569,7 +590,7 @@ video{
     height: 0.1px;
     background-color: #BFBFBF;
 }
-/*sec6*/
+/*mençoes1*/
 .sec6{
     display: flex;
     align-items: center;
@@ -584,7 +605,7 @@ video{
 } 
 .sec6 img{
     width: min(30em, 90vw);
-    border-radius: 15px;
+    border-radius: 30px 0 30px 0;
 }
 .sec6 h4{
     color: #025935;
@@ -593,9 +614,10 @@ video{
 }
 .sec6 p{
     font-family: "whit";
-    font-size: min(18px, 5vw);
+    font-size: min(18px, 4vw);
     margin-bottom: 5px;
 }
+/*mençoes2*/
 .sec7{
     display: flex;
     justify-content: center;
@@ -605,7 +627,9 @@ video{
 }
 .sec7 img{
     width: min(30em, 90vw);
-    border-radius: 15px;
+    height: 25em;
+    object-fit: cover;
+    border-radius: 0 30px 0 30px;
 }
 .sec7 .content{
     width: 25em;
@@ -621,11 +645,65 @@ video{
     font-size: min(18px, 5vw);
     margin-bottom: 5px;
 }
+/*gestão*/
+.sec8{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.gest{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.sec8:hover .titulo::after{
+    width: 50px;
+}
+.gestao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.gestao img{
+    width: max(350px, 20vw);
+    height: min(600px, 80vh);
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+.gestao img:hover{
+    width: max(400px, 30vw);
+}
+.sec8 .content{
+    text-decoration: none;
+    height: 25px;
+    padding: 1%;
+    gap: 5%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+.sec8 h4{
+    white-space: nowrap;
+    font-weight: 100;
+}
+.sec8 i{
+    font-size: 25px;
+}
+.gestao:hover .content{
+    transform: translateY(-100%);
+    opacity: 1;
+}
 /*footer*/
 footer{
     background-color: #121212;
     padding: 15px;
-    margin-top: 1%;
 }
 footer .roda{
     display: flex;
