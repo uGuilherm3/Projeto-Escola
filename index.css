@@ -488,7 +488,7 @@ main h2{
 }
 .conteudo:hover{
     transform: translateY(-3%);
-    box-shadow: 15px 15px 15px #eeeeee,
+    box-shadow: 15px 15px 15px #e7e7e7,
              -15px -15px 15px #f7f7f7;
 }
 .sec31 p{
