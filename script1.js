@@ -17,6 +17,7 @@ window.addEventListener('scroll', function() {
     rolar();
 })
 
+//botão
 const btn = document.querySelector('.topo')
 
 btn.addEventListener('click', () => {

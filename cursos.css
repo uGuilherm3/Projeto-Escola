@@ -180,7 +180,7 @@ aside{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 10%;
 }
 .sec3 img{
     width: min(30em,90vw);
@@ -200,13 +200,14 @@ aside{
     font-size: 18px;
     line-height: 1.500;
 }
+/*estatisticas*/
 .sec4{
     margin-top: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 10%;
 }
 .sec4 .content{
     display: flex;

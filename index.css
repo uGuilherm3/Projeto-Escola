@@ -27,17 +27,6 @@
         width: min(1050px, 85vw);
     }
 }
-@keyframes back{
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 0%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
-}
 @keyframes borda1{
     0%{
         clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
@@ -60,6 +49,52 @@
         transform: translateX(-3px);
     }
 }
+[data-anime]{
+    opacity: 0;
+    transition: 1s ease ;
+}
+[data-anime="left"]{
+    transform: translate3d(-80px, 0, 0);
+}
+[data-anime="right"]{
+    transform: translate3d(80px, 0, 0);
+}
+[data-anime="up"]{
+    transform: translate3d(0px, 80px, 0);
+}
+[data-anime="bot"]{
+    transform: translate3d(0px, -80px, 0px);
+}
+[data-anime].anima{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+@media (max-width: 500px){
+    .titulo::after{
+        display: none;
+    }
+    .titulo::before{
+        display: none;
+    }
+    .redes, .inf, .con, .mult{
+        width: 47vw !important;
+    }
+    h1{
+        display: none;
+    }
+    header{
+        justify-content: center !important;
+        gap: 0 !important;
+    }
+}
+::-webkit-scrollbar{
+    width: 10px; 
+}
+::-webkit-scrollbar-thumb{
+    background-color: #025935;
+    border-radius: 10px;
+    
+}
 body{
     background-image: url(imgs/zback.jpg);
     background-size: cover;
@@ -76,10 +111,9 @@ h1{
 header{
     height: 10vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin-left: 5%;
+    gap: 50%;
 }
 .div1{
     display: flex;
@@ -117,7 +151,7 @@ header{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'whit', sans-serif;
-    font-size: min(17px, 4vw);
+    font-size: min(15px, 4vw);
 }
 .menu-item::after{
     position: absolute;
@@ -179,12 +213,18 @@ main h2{
     height: max-content;
 }
 /*introdução*/
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .sec1{
     margin-top: 15px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1%;
+    width: 100%;
 }
 .sec1 h2{
     color: #025935;
@@ -242,12 +282,12 @@ main h2{
 /*titulo*/
 .titulo{
     position: relative;
+    width: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
-    width: 100%;
-    margin-top: 1%;
+    margin: 2% 0;
     font-family: "whit";
     font-size: 35px;
     font-weight: 100;   
@@ -255,11 +295,25 @@ main h2{
 .titulo::after{
     position: absolute;
     content: "";
-    bottom: -10px;
+    top: 50%;
+    left: 130%;
     border-radius: 5px;
     height: 4px;
-    width: 4px;
+    width: 10vw;
     background-color: #F29325;
+    transform: translateY(50%);
+    transition: 0.3s ease;
+}
+.titulo::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 130%;
+    border-radius: 5px;
+    height: 4px;
+    width: 10vw;
+    background-color: #F29325;
+    transform: translateY(50%);
     transition: 0.3s ease;
 }
 /*cursos*/
@@ -268,10 +322,6 @@ main h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-}
-.sec2:hover .titulo::after{
-    width: 50px;
 }
 .sec2 .content{
     margin: 0;
@@ -392,9 +442,6 @@ main h2{
     align-items: center;
     gap: 5%;
 }
-.sec3:hover .titulo::after{
-    width: 50px;
-}
 .content1{
     display: flex;
     justify-content: center;
@@ -466,6 +513,17 @@ main h2{
     overflow: hidden;
     margin-bottom: 20px;
     cursor: default;
+    position: relative;
+}
+.conteudo::after{
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 35px;
+    background-color: #F29325;
+    border-radius: 10px;
+    top: -5px;
+    left: -5px;
 }
 .conteudo:hover{
     transform: translateY(-3%);
@@ -531,13 +589,12 @@ video{
 .sec5{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding-bottom: 1%;
 }
-.sec5:hover .titulo::after{
-    width: 50px;
-}
 .content2{
+    width: 100%;
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -578,17 +635,6 @@ video{
 .sec5 a:hover i{
     transform: rotate(-360deg);
     color: #000000;
-}
-.b1-div{
-    text-align: center;
-    display: flex;
-    margin: 1%;
-    justify-content: center;
-}
-.b1{
-    width: 30%;
-    height: 0.1px;
-    background-color: #BFBFBF;
 }
 /*mençoes1*/
 .sec6{
@@ -650,6 +696,7 @@ video{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     margin-top: 15px;
 }
 .gest{
@@ -657,9 +704,6 @@ video{
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
-}
-.sec8:hover .titulo::after{
-    width: 50px;
 }
 .gestao{
     display: flex;
