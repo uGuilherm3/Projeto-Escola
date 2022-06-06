@@ -355,7 +355,7 @@ main h2{
     font-size: min(18px,2.5vw);
 }
 .inf{
-    background-image: url(https://i.pinimg.com/originals/94/32/cd/9432cdd515ab3d772334e471e230c211.jpg);
+    background-image: url(imgs/alunoinfo.HEIC);
     width: max(300px, 20vw);
     height: max(450px, 60vh);
     background-size: cover;
@@ -700,6 +700,10 @@ video{
 }
 .sec8 i{
     font-size: 25px;
+    transition: 0.5s ease-in;
+}
+.sec8 a:hover i{
+    color: #F29325;
 }
 .gestao:hover .content{
     transform: translateY(-100%);
