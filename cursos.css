@@ -438,6 +438,11 @@ aside{
     gap: 5px;
     color: #121212;
 }
+.profs a:hover i{
+    transform: rotate(360deg);
+    transition: 0.6s ease;
+    color: orange;
+}
 /*footer*/
 footer{
     background-color: #121212;

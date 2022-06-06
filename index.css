@@ -290,67 +290,37 @@ main h2{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
+}
+.sec2 .content2{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.678);
+    width: max-content;
+    padding: 15px 25px;
+    border-radius: 15px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s ease;
+    margin-bottom: 5px;
+}
+.sec2 .inf:hover .content2, .sec2 .mult:hover .content2, .sec2 .con:hover .content2, .sec2 .redes:hover .content2{
+    opacity: 1;
+    transform: translateY(0);
+}
+.sec2 .inf:hover, .sec2 .mult:hover, .sec2 .con:hover, .sec2 .redes:hover{
+    transform: scale(105%);
 }
 .sec2 h4{
     font-family: "whit";
     font-size: min(18px,2.5vw);
     color: white;
-    margin-bottom: 10%;
-    opacity: 0;
     transition: 0.3s ease;
-}
-.sec2 .inf:hover h4{
-    opacity: 1;
-    transform: translateY(-10px);
-}
-.sec2 .inf:hover i{
-    opacity: 1;
-    transform: translateY(-10px);
-}
-.sec2 .inf:hover{
-    transform: scale(107%);
-}
-.sec2 .mult:hover{
-    transform: scale(107%);
-}
-.sec2 .mult:hover h4{
-    opacity: 1;
-    transform: translateY(-15px);
-}
-.sec2 .mult:hover i{
-    opacity: 1;
-    transform: translateY(-15px);
-}
-.sec2 .con:hover{
-    transform: scale(107%);
-}
-.sec2 .con:hover h4{
-    opacity: 1;
-    transform: translateY(-15px);
-}
-.sec2 .con:hover i{
-    opacity: 1;
-    transform: translateY(-15px);
-}
-.sec2 .redes:hover{
-    transform: scale(107%);
-}
-.sec2 .redes:hover h4{
-    opacity: 1;
-    transform: translateY(-15px);
-}
-.sec2 .redes:hover i{
-    opacity: 1;
-    transform: translateY(-15px);
 }
 .sec2 a{
     text-decoration: none;
 }
 .sec2 i{
     color: white;
-    margin-bottom: 10%;
-    opacity: 0;
     transition: 0.3s;
     font-size: min(18px,2.5vw);
 }
@@ -359,10 +329,11 @@ main h2{
     width: max(300px, 20vw);
     height: max(450px, 60vh);
     background-size: cover;
-    transition: 0.1s ease;
+    transition: 0.2s ease;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden;
 }
 .mult{
     background-image: url(imgs/alunomult.jpg);
@@ -373,6 +344,7 @@ main h2{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden;
 }
 .con{
     background-image: url(imgs/alunoctb.jpeg);
@@ -383,6 +355,7 @@ main h2{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden;
 }
 .redes{
     background-image: url(imgs/alunoredes.png);
@@ -393,6 +366,7 @@ main h2{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden;
 }
 /*eventos*/
 .sec3{
@@ -663,8 +637,9 @@ video{
 .gest{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     margin-top: 20px;
+    overflow: hidden;
+    width: 98vw;
 }
 .gestao{
     display: flex;
@@ -673,8 +648,8 @@ video{
     position: relative;
 }
 .gestao img{
-    width: max(350px, 20vw);
-    height: min(600px, 80vh);
+    width: 19vw;
+    height: min(600px, 60vh);
     object-fit: cover;
     transition: 0.5s ease;
 }
@@ -693,6 +668,9 @@ video{
     position: absolute;
     bottom: 0;
     opacity: 0;
+    background-color: rgba(0, 0, 0, 0.658);
+    padding: 15px 25px;
+    border-radius: 10px;
 }
 .sec8 h4{
     white-space: nowrap;
@@ -700,10 +678,11 @@ video{
 }
 .sec8 i{
     font-size: 25px;
-    transition: 0.5s ease-in;
+    transition: 0.5s ease;
 }
 .sec8 a:hover i{
     color: #F29325;
+    transform: rotate(360deg);
 }
 .gestao:hover .content{
     transform: translateY(-100%);
@@ -814,5 +793,8 @@ footer:hover .rodape::after{
     header{
         justify-content: flex-start;
         margin: 1%;
+    }
+    .sec8{
+        display: none;
     }
 }
