@@ -50,7 +50,7 @@
     }
 }
 ::-webkit-scrollbar{
-    width: 10px; 
+    width: 13px; 
 }
 ::-webkit-scrollbar-thumb{
     background-color: #025935;
@@ -355,7 +355,7 @@ main h2{
     font-size: min(18px,2.5vw);
 }
 .inf{
-    background-image: url(imgs/alunoinfo.HEIC);
+    background-image: url(imgs/alunoinfo.png);
     width: max(300px, 20vw);
     height: max(450px, 60vh);
     background-size: cover;
@@ -365,7 +365,7 @@ main h2{
     align-items: flex-end;
 }
 .mult{
-    background-image: url(https://a-static.besthdwallpaper.com/multicolor-stripes-wallpaper-1920x1080-17130_48.jpg);
+    background-image: url(imgs/alunomult.jpg);
     width: max(300px, 20vw);
     height: max(450px, 60vh);
     background-size: cover;
@@ -375,7 +375,7 @@ main h2{
     align-items: flex-end;
 }
 .con{
-    background-image: url(https://ze-robot.com/images/source/28935.jpg);
+    background-image: url(imgs/alunoctb.jpeg);
     width: max(300px, 20vw);
     height: max(450px, 60vh);
     background-size: cover;
@@ -385,7 +385,7 @@ main h2{
     align-items: flex-end;
 }
 .redes{
-    background-image: url(https://i.pinimg.com/originals/11/1a/03/111a03133d14214539c96e0f657dff1a.png);
+    background-image: url(imgs/alunoredes.png);
     width: max(300px, 20vw);
     height: max(450px, 60vh);
     background-size: cover;
