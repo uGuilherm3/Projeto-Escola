@@ -775,6 +775,10 @@ footer:hover .rodape::after{
     .titulo::after{
         display: none;
     }
+    main h2{
+        animation: none;
+        border: none;
+    }
     .titulo::before{
         display: none;
     }

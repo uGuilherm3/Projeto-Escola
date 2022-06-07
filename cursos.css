@@ -175,6 +175,7 @@ aside{
 .sec2 p{
     line-height: 1.400;
 }
+/*apresentação*/
 .sec3{
     display: flex;
     justify-content: center;
@@ -237,18 +238,18 @@ aside{
     width: 120px;
     height: 120px;
     margin-bottom: 5%;
-    box-shadow: 0px 0px 10px 1px rgba(120, 151, 207, 0.274);
+    box-shadow: 0px 0px 10px 1px rgba(160, 160, 160, 0.274);
     transition: 0.3s ease ;
 }
 .sec4 .content2:hover{
     transform: scale(105%);
-    box-shadow: 0px 0px 10px 5px rgba(120, 151, 207, 0.274);
+    box-shadow: 0px 0px 10px 5px rgba(180, 180, 180, 0.274);
 }
 .sec4 h4{
     font-size: 50px;
     font-family: "whitb";
     color: transparent;
-    background: linear-gradient(45deg,rgb(120, 151, 207), rgb(150, 225, 255));
+    background: linear-gradient(45deg,rgb(134, 134, 134), rgb(100, 100, 100));
     -webkit-background-clip: text;
 }
 /*criações de alunos*/
