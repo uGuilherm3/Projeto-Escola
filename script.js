@@ -18,3 +18,10 @@ const btn3 = document.querySelector('.topo')
 btn3.addEventListener('click', () => {
     window.scrollTo({top: 0, behavior: "smooth"})
 })
+
+/*btn4*/
+const btn4 = document.querySelector('#btn4')
+
+btn4.addEventListener('click', () => {
+    window.scroll({top: window.innerHeight*1, behavior: "smooth"})
+})

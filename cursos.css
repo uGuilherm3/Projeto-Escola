@@ -21,7 +21,7 @@
 }
 [data-anime]{
     opacity: 0;
-    transition: 1s ease ;
+    transition: 1s ease;
 }
 [data-anime="left"]{
     transform: translate3d(-80px, 0, 0);
@@ -40,11 +40,10 @@
     transform: translate3d(0px, 0px, 0px);
 }
 body{
-
+    overflow-x: hidden;
 }
 header{
     display: flex;
-    align-items: center;
     justify-content: flex-start;
     margin-left: 5%;
     height: 10vh;
@@ -270,6 +269,7 @@ aside{
     -10px -10px 10px #fcfcfc;
     padding: 10px 5px;
     height: 420px;
+    transition: box-shadow 0.3s, transform 1s, opacity 1s;
 }
 .sec5 .content:hover{
     transform: translateY(-10px);
@@ -340,6 +340,7 @@ aside{
     cursor: default;
     background-color: #fff;
     margin-bottom: 10px;
+    transition: box-shadow 0.3s, transform 1s, opacity 1s;
 }
 .feed:hover{
     box-shadow: 15px 15px 15px #eeeeee,
