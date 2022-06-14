@@ -213,10 +213,10 @@ main img{
     width: 100%;
 }
 .sec1 .img{
-    width: 30em;
-    height: 30em;
+    width: min(30em, 30vw);
+    height: min(30em, 30vw);
     border-radius: 15px;
-    background-color: #25d3f244;
+    background-color: #c2f6ff;
     position: relative;
 }
 .sec1 .img::after{
@@ -224,16 +224,16 @@ main img{
     content: "";
     bottom: -20px;
     left: -20px;
-    width: 80px;
-    height: 80px;
-    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
     z-index: -1;
     background-color: #a025f227;
 }
 .sec1 img{
     position: absolute;
-    width: 30em;
-    height: 40em;
+    width: min(30em, 30vw);
+    height: min(40em, 40vw);
     object-fit: cover;
     bottom: 0;
     left: 50%;
@@ -244,7 +244,7 @@ main img{
 }
 .sec1 h3{
     font-family: "whitb";
-    font-size: 40px;
+    font-size: min(40px, 4vw);
 }
 .sec1 span{
     font-family: "whitb";
@@ -351,20 +351,21 @@ main img{
 }
 #info{
     border-radius: 30px 0;
-    background-color: #25d3f244;
+    background-color: #c2f6ff;
     transform: translate3d(0px, -50px, 0);
 }
 #mult{
     border-radius: 0 30px;
+    background-color: #fac2ff;
 }
 #ctb{
     border-radius: 30px 0;
     transform: translate3d(0px, -50px, 0);
-    background-color: #f2922554;
+    background-color: #ffe3c2;
 }
 #redes{
     border-radius: 0 30px;
-    background-color: #25f29244;
+    background-color: #c2ffc2;
 }
 .sec2 h3{
     font-family: "whitb";
@@ -419,12 +420,7 @@ main img{
     transform: translateX(0);
 }
 /*eventos*/
-.sec3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-}
+
 /*video*/
 .sec4{
     margin-top: 3%;
@@ -567,7 +563,7 @@ video{
     border-radius: 10px;
 }
 .sec6 .content2:hover{
-    background-color: #f292257e;
+    background-color: #ffe3c2;
     box-shadow: 10px 10px 10px #f2922554,
              -10px -10px 10px rgb(245, 245, 245);
 }
@@ -748,6 +744,7 @@ footer:hover .rodape::after{
     height: 20px;
     border-radius: 100%;
     margin-left: 5%;
+    animation: background2 ease infinite alternate 10s;
 }
 .background .azul{
     background-color: #25d3f244;
@@ -755,6 +752,7 @@ footer:hover .rodape::after{
     height: 18px;
     border-radius: 100%;
     margin-left: 80%;
+    animation: background4 ease infinite alternate 10s;
 }
 .background .roxo{
     background-color: #a025f227;
@@ -762,12 +760,14 @@ footer:hover .rodape::after{
     height: 18px;
     border-radius: 100%;
     margin-left: 50%;
+    animation: background3 ease infinite alternate 10s;
 }
 .background .laranja{
     background-color: #f292257e;
     width: 20px;
     height: 20px;
     border-radius: 100%;
+    animation: background3 ease infinite alternate 10s;
 }
 .background .vermelho{
     background-color: #f2254044;
@@ -775,42 +775,29 @@ footer:hover .rodape::after{
     height: 15px;
     border-radius: 100%;
     margin-left: 65%;
+    animation: background1 ease infinite alternate 10s;
+}
+@keyframes background1{
+    0%{
+        transform: translate3d(20px, 50px, 0);
+    }
+}
+@keyframes background2{
+    0%{
+        transform: translate3d(0, 50px, 0);
+    }
+}
+@keyframes background3{
+    0%{
+        transform: translate3d(-50px, 100px, 0);
+    }
+}
+@keyframes background4{
+    0%{
+        transform: translate3d(-100px, 10px, 0);
+    }
 }
 /*medias*/
 @media (max-width: 600px){
-    .titulo::after{
-        display: none;
-    }
-    main h2{
-        animation: none;
-        border: none;
-    }
-    .titulo::before{
-        display: none;
-    }
-    .redes, .inf, .con, .mult{
-        width: 47vw !important;
-    }
-    header{
-        justify-content: center;
-        gap: 0;
-    }
-}
-@media (max-width: 1000px){
-    h1{
-        display: none;
-    }
-    header{
-        justify-content: flex-start;
-        margin: 1%;
-    }
-    .sec8{
-        display: none;
-    }
-    .sec1{
-        
-    }
-    .informa1, .informa2{
-        width: 50vw;
-    }
+
 }
