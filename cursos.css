@@ -99,6 +99,9 @@ h1{
     object-fit: cover;
     z-index: -1;
 }
+span{
+    font-family: "whitb";
+}
 aside{
 }
 .titulo{
@@ -149,16 +152,15 @@ aside{
 .cards img{
     width: 50px;
     padding: 1%;
-    border-radius: 62% 58% 80% 48%;
 }
 .icon1{
-    background-color: rgba(120, 151, 207, 0.432);
+    border-radius: 57% 43% 40% 60% / 68% 47% 53% 32%;
 }
 .icon2{
-    background-color: rgba(206, 207, 120, 0.432);
+    border-radius: 34% 66% 60% 40% / 41% 50% 50% 59%;
 }
 .icon3{
-    background-color: rgba(207, 169, 120, 0.432);
+    border-radius: 50% 50% 72% 28% / 41% 36% 64% 59%;
 }
 .sec2 .content{
     display: flex;
@@ -238,18 +240,14 @@ aside{
     height: 120px;
     margin-bottom: 5%;
     box-shadow: 0px 0px 10px 1px rgba(160, 160, 160, 0.274);
-    transition: 0.3s ease ;
+    transition: 0.3s ease;
+}
+.sec4 .content2 img{
+    width: 50%;
 }
 .sec4 .content2:hover{
     transform: scale(105%);
     box-shadow: 0px 0px 10px 5px rgba(180, 180, 180, 0.274);
-}
-.sec4 h4{
-    font-size: 50px;
-    font-family: "whitb";
-    color: transparent;
-    background: linear-gradient(45deg,rgb(134, 134, 134), rgb(100, 100, 100));
-    -webkit-background-clip: text;
 }
 /*criações de alunos*/
 .sec5{
@@ -372,11 +370,12 @@ aside{
     align-items: center;
     gap: 10px;
 }
+/*professores*/
 .sec7{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3%;
+    gap: 5%;
     margin-top: 1%;
 }
 .profs{
@@ -384,6 +383,7 @@ aside{
     gap: 1%;
     box-shadow: 0px 0px 3px 3px rgba(185, 185, 185, 0.192);
     background-color: #fff;
+    cursor: default;
 }
 .profs img{
     width: min(50vw, 300px);
@@ -524,4 +524,23 @@ footer:hover .rodape::after{
 }
 #icon1{
     color: #BFBFBF;
+}
+/*cursos css*/
+.info{
+    color: #c2f6ff;
+}
+.informatica{
+    background-color: #c2f6ff;
+}
+.mult{
+    color: #fac2ff;
+}
+.multimidia{
+    background-color: #fac2ff;
+}
+.ctb{
+    color: #ffe3c2;
+}
+.contabilidade{
+    background-color: #ffe3c2;
 }

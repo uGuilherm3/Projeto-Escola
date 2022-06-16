@@ -48,7 +48,6 @@ body{
 }
 /*header*/
 header{
-    height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -61,10 +60,6 @@ header{
     width: min(60px ,7vw);
     border-radius: 50%;
 }
-.menu{
-    display: flex;
-    width: 15%;
-}
 #bot{
     cursor: pointer;
 }
@@ -73,6 +68,11 @@ header{
 }
 .topo{
     cursor: pointer;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    width: 15%;
 }
 .menu-item{
     position: relative;
@@ -178,19 +178,19 @@ main img{
     width: 13vw;
 }
 .aluno1{
-    background-color: #25d3f244;
+    background-color: #c2f6ff;
     height: 40vh;
 }
 .aluno2{
-    background-color: #a025f227;
+    background-color: #fac2ff;
     height: 35vh;
 }
 .aluno3{
-    background-color: #25f29244;
+    background-color: #c2ffc2;
     height: 35vh;
 }
 .aluno4{
-    background-color: #f292257e;
+    background-color: #ffe3c2;
     height: 45vh;
 }
 .alunos2{
@@ -224,8 +224,8 @@ main img{
     content: "";
     bottom: -20px;
     left: -20px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 15px;
     z-index: -1;
     background-color: #a025f227;
@@ -740,19 +740,19 @@ footer:hover .rodape::after{
 }
 .background .verde{
     background-color: #25f29244;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 100%;
     margin-left: 5%;
-    animation: background2 ease infinite alternate 10s;
+    animation: background2 ease infinite alternate 15s;
 }
 .background .azul{
     background-color: #25d3f244;
     width: 18px;
     height: 18px;
     border-radius: 100%;
-    margin-left: 80%;
-    animation: background4 ease infinite alternate 10s;
+    margin-left: 90%;
+    animation: background4 ease infinite alternate 15s;
 }
 .background .roxo{
     background-color: #a025f227;
@@ -760,22 +760,22 @@ footer:hover .rodape::after{
     height: 18px;
     border-radius: 100%;
     margin-left: 50%;
-    animation: background3 ease infinite alternate 10s;
+    animation: background3 ease infinite alternate 15s;
 }
 .background .laranja{
     background-color: #f292257e;
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    animation: background3 ease infinite alternate 10s;
+    animation: background3 ease infinite alternate 15s;
 }
 .background .vermelho{
     background-color: #f2254044;
     width: 15px;
     height: 15px;
     border-radius: 100%;
-    margin-left: 65%;
-    animation: background1 ease infinite alternate 10s;
+    margin-left: 70%;
+    animation: background1 ease infinite alternate 15s;
 }
 @keyframes background1{
     0%{
