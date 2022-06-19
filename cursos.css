@@ -101,6 +101,10 @@ h1{
 }
 span{
     font-family: "whitb";
+    text-decoration: underline;
+}
+p{
+    cursor: default;
 }
 aside{
 }
@@ -445,6 +449,25 @@ aside{
     transition: 0.6s ease;
     color: orange;
 }
+/*alunos*/
+.sec8{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sec8 video{
+    height: 200px;
+}
+.sec8 .content{
+
+}
+.sec8 .content2{
+    display: flex;
+    flex-direction: column;
+}
+.sec8 .content3{
+    display: flex;
+}
 /*footer*/
 footer{
     background-color: #121212;
@@ -532,15 +555,26 @@ footer:hover .rodape::after{
 .informatica{
     background-color: #c2f6ff;
 }
+.inf:hover{
+    box-shadow: 1px 1px 15px 1px #c2f6ff !important;
+}
+
 .mult{
     color: #fac2ff;
 }
 .multimidia{
     background-color: #fac2ff;
 }
+.multi:hover{
+    box-shadow: 1px 1px 15px 1px #c2f6ff !important;
+}
+
 .ctb{
-    color: #ffe3c2;
+    color: #ffcd94;
 }
 .contabilidade{
     background-color: #ffe3c2;
+}
+.cont:hover{
+    box-shadow: 1px 1px 15px 1px #ffe3c2 !important;
 }
