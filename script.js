@@ -1,27 +1,46 @@
-/*btn1*/
-const btn = document.querySelector('#bot')
+
+//btns
+const menuItems = document.querySelectorAll('nav a[href^="#"]','.btns a[href^="#"]');
+
+function getScrollTopByHref(element) {
+	const id = element.getAttribute('href');
+	return document.querySelector(id).offsetTop;
+}
+
+function scrollToPosition(to) {
+
+	window.scroll({
+	top: to,
+	behavior: "smooth",
+	})
+}
+
+function scrollToIdOnClick(event) {
+	event.preventDefault();
+	const to = getScrollTopByHref(event.currentTarget)- 70;
+	scrollToPosition(to);
+}
+
+menuItems.forEach(item => {
+	item.addEventListener('click', scrollToIdOnClick);
+});
+
+/*btn pro topo*/
+const btn = document.querySelector('.topo')
 
 btn.addEventListener('click', () => {
-    window.scroll({top: window.innerHeight*1.4, behavior: "smooth"})
+    window.scrollTo({top: 0, behavior: "smooth"})
 })
 
-/*btn2*/
-const btn2 = document.querySelector('#bot2')
+const btn2 = document.querySelector('.topo2')
 
 btn2.addEventListener('click', () => {
-    window.scroll({top: window.innerHeight*4.2, behavior: "smooth"})
+    window.scrollTo({top: 0, behavior: "smooth"})
 })
 
-/*btn3*/
-const btn3 = document.querySelector('.topo')
+const btn3 = document.querySelector('.topo3')
 
 btn3.addEventListener('click', () => {
     window.scrollTo({top: 0, behavior: "smooth"})
 })
 
-/*btn4*/
-const btn4 = document.querySelector('#btn4')
-
-btn4.addEventListener('click', () => {
-    window.scroll({top: window.innerHeight*1, behavior: "smooth"})
-})

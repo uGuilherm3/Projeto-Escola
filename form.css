@@ -14,11 +14,11 @@
 }
 @font-face {
     font-family: 'whit';
-    src: url(whitneylight.otf);
+    src: url(fonts/whitneylight.otf);
 }
 @font-face {
     font-family: "whitb";
-    src: url(whitneybold.otf);
+    src: url(fonts/whitneybold.otf);
 }
 ::-webkit-scrollbar{
     width: 10px; 
@@ -27,9 +27,6 @@
     background-color: #025935;
     border-radius: 10px;
     
-}
-body{
-
 }
 h1{
     font-family: "whitb";
