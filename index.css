@@ -267,7 +267,7 @@ main video{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 4% 0;
+    margin-top: 5%;
 }
 #vid{
     border-radius: 20px;
@@ -277,8 +277,8 @@ main video{
 }
 .sec2 video, .sec2 img{
     object-fit: cover;
-    width: 295px;
-    height: 245px;
+    width: 300px;
+    height: 250px;
     border-radius: 25px;
 }
 .sec2 .content2{
@@ -296,14 +296,14 @@ main video{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 .cursos .content{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 .cursos .cards{
     position: relative;
@@ -345,7 +345,7 @@ main video{
 }
 /*feedbacks*/
 .feed{
-    margin-top: 3%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     cursor: default;
@@ -355,7 +355,7 @@ main video{
     justify-content: center;
     align-items: center;
     gap: 13%;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 .feedbacks .img{
     width: min(25em, 25vw);
@@ -433,7 +433,7 @@ main video{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 .mais .title h4{
     font-size: 20px;
@@ -442,7 +442,7 @@ main video{
 }
 .gestao{
     position: relative;
-    margin-top: 3%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -662,6 +662,54 @@ footer i{
     color: rgb(255, 145, 0);
 }
 /*medias*/
-@media (max-width: 600px){
-
+@media (min-width:600px) and (max-width: 1300px){
+    .sec1{
+        gap: 3%;
+    }
+    .sec2 .content{
+        flex-wrap: wrap;
+    }
+    .sec2 #vid{
+        width: 500px;
+    }
+    .sec2 video ,.sec2 img{
+        width: 250px;
+    }
+    .cursos .content{
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+    .cursos .cards{
+        width: 35vw;
+    }
+    .cursos .cards:hover{
+        width: 35vw;
+    }
+    .feedbacks{
+        flex-wrap: wrap-reverse;
+        gap: 50px;
+    }
+    .feedbacks .img{
+        display: none;
+    }
+    .conta{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .conta .videos{
+        width: 100vw;
+    }
+    .conta .videos video{
+        border-radius: 0;
+        width: 100vw;
+    }
+    footer .btns{
+        gap: 10px;
+    }
+    footer .ajuda{
+        gap: 10px;
+    }
+    footer h6{
+        margin-top: 20px;
+    }
 }
