@@ -268,29 +268,29 @@ main #back{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin-top: 5%;
 }
 #vid{
     border-radius: 20px;
-    width: 600px;
+    width: 550px;
     height: 500px;
     object-fit: cover;
 }
 .sec2 video, .sec2 img{
     object-fit: cover;
-    width: 300px;
-    height: 250px;
-    border-radius: 25px;
+    width: 260px;
+    height: 245px;
+    border-radius: 20px;
 }
 .sec2 .content2{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 .sec2 .content3{
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 /*cursos*/
 .cursos{
@@ -309,8 +309,8 @@ main #back{
 }
 .cursos .cards{
     position: relative;
-    width: 300px;
-    height: 250px;
+    width: 280px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -509,10 +509,12 @@ main #back{
 }
 /*conta*/
 .conta{
+    width: 100%;
     margin-top: 4%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 /*contatos*/
 .contatos{
@@ -531,10 +533,10 @@ main #back{
     justify-content: space-around;
     flex-direction: column;
     text-decoration: none;
-    gap: 30px;
-    width: 160px;
-    height: 170px;
-    font-size: 60px;
+    gap: 40px;
+    width: 150px;
+    height: 150px;
+    font-size: 55px;
     background-color: #fff;
     padding: 5px;
     border-radius: 20px;
@@ -553,7 +555,7 @@ main #back{
     filter: blur(20px);
 }
 .contatos a p{
-    font-size: 18px;
+    font-size: 15px;
     color: #000;
 }
 /*video*/
@@ -698,6 +700,9 @@ footer i{
     .conta{
         flex-wrap: wrap;
         gap: 50px;
+    }
+    .contatos{
+        width: 100%;
     }
     .conta .videos{
         width: 100vw;
