@@ -875,4 +875,60 @@ footer i{
     .feed .cards p{
         padding: 10px;
     }
+    .mais{
+        margin-top: 40px;
+    }
+    .gestao{
+        gap: 10px;
+    }
+    .gestao .cards{
+        width: 45vw;
+        height: 45vw;
+    }
+    .gestao .content{
+        font-size: 15px !important;
+    }
+    .gestao .cards::after{
+        display: none;
+    }
+    .conta{
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .contatos a{
+        font-size: 50px;
+        padding: 10px;
+        border-radius: 100%;
+        width: max-content;
+        height: max-content;
+        box-shadow:  5px 5px 10px #13be2121,
+             -5px -5px 10px #ffffff;
+    }
+    .contatos a::after{
+        display: none;
+    }
+    .contatos p{
+        display: none;
+    }
+    .videos{
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        gap: 5px;
+        text-align: center;
+    }
+    .videos #back2{
+        border-radius: 0;
+    }
+    .videos p{
+        font-size: 15px;
+    }
+    .videos h3{
+        font-size: 25px;
+    }
+    .videos a{
+        font-size: 17px;
+        padding: 10px;
+    }
 }
