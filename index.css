@@ -894,7 +894,7 @@ footer i{
     .conta{
         margin-top: 40px;
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
     }
     .contatos a{
         font-size: 50px;

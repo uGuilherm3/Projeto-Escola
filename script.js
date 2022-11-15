@@ -1,6 +1,6 @@
 
 //btns
-const menuItems = document.querySelectorAll('nav a[href^="#"]','.btns a[href^="#"]');
+const menuItems = document.querySelectorAll('nav a[href^="#"]','.btns a[href^="#"]','.navmob a[href^="#"]');
 
 function getScrollTopByHref(element) {
 	const id = element.getAttribute('href');
