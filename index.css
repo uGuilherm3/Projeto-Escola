@@ -851,8 +851,28 @@ footer i{
     }
     .cursos .cards{
         width: 45vw;
+        height: 45vw;
     }
     .cursos .cards:hover{
         width: 45vw;
+    }
+    .feed{
+        margin-top: 40px;
+    }
+    .feed .img{
+        display: none;
+    }
+    .feed .cards{
+        width: 80vw;
+    }
+    .feed .cards img{
+        width: 80px;
+        height: 60px;
+    }
+    .feed .cards h4{
+        padding: 10px;
+    }
+    .feed .cards p{
+        padding: 10px;
     }
 }
