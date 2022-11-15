@@ -728,6 +728,10 @@ footer i{
     }
 }
 @media (max-width: 600px) {
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
     header{
         display: none;
     }
@@ -758,7 +762,7 @@ footer i{
     }
     .navmob .content i{
         font-size: 25px;
-        padding: 10px;
+        padding: 15px;
     }
     .navmob .content{
         width: 0;
@@ -779,8 +783,8 @@ footer i{
     .navmob a{
         text-decoration: none;
         color: #000;
-        font-size: 15px;
-        padding: 10px 30px;
+        font-size: 16px;
+        padding: 15px 40px;
     }
     h1{
         text-align: center;
