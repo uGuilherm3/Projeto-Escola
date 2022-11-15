@@ -26,6 +26,21 @@
 
     </header>
 
+    <!--navbar mobile-->
+    <div class="navmob">
+
+        <img src="imgs/zlogo.jpg" onclick="especial()">
+
+        <div class="content">
+            <a href="#sobre">sobre</a>
+            <a href="#fotos">nós</a>
+            <a href="#cursos">cursos</a>
+            <a href="#feed">feed</a>
+            <a href="#contato">contatos</a>
+        </div>
+        
+    </div>
+
     <main>
         <img id="back" src="imgs/banner.jpg">
         <h1>A escola que te prepara para o futuro!</h1>
@@ -245,7 +260,9 @@
     </aside>
 
     <footer>
+
         <div class="rodape">
+
             <img class="logo topo2" src="imgs/zlogo.jpg">
             <div class="btns">
                 <h5>Navegar</h5>
@@ -266,11 +283,22 @@
                 <a href=""><i class='bx bxl-instagram-alt'></i></a>
                 <a href=""><i class='bx bxl-linkedin'></i></a>
             </div>
+
         </div>
         <h6>feito com <i class='bx bxs-heart' ></i> pela INFO3 2022</h6>
+
     </footer>
 
 <script src="script.js"></script>
+
+<script>
+    function especial() {
+        var btn = document.querySelector('.navmob a')
+
+        btn.classList.add(".espec")
+    }
+    
+</script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
