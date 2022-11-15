@@ -32,13 +32,18 @@
         <img src="imgs/zlogo.jpg" onclick="especial()">
 
         <div class="content">
-            <a href="#sobre">sobre</a>
-            <a href="#fotos">nós</a>
-            <a href="#cursos">cursos</a>
-            <a href="#feed">feed</a>
-            <a href="#contato">contatos</a>
+
+            <div class="content2">
+                <a href="#sobre">sobre</a>
+                <a href="#fotos">nós</a>
+                <a href="#cursos">cursos</a>
+                <a href="#feed">feed</a>
+                <a href="#contato">contatos</a>
+            </div>
+
+            <i class='bx bx-x' onclick="especial2()"></i>
         </div>
-        
+
     </div>
 
     <main>
@@ -293,9 +298,14 @@
 
 <script>
     function especial() {
-        var btn = document.querySelector('.navmob a')
+        var btn = document.querySelector('.navmob .content')
 
-        btn.classList.add(".espec")
+        btn.classList.add("espec")
+    }
+    function especial2() {
+        var btn = document.querySelector('.navmob .content')
+
+        btn.classList.remove("espec")
     }
     
 </script>
