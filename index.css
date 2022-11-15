@@ -931,4 +931,14 @@ footer i{
         font-size: 17px;
         padding: 10px;
     }
+    footer{
+        padding: 20px 0;
+    }
+    footer .social{
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer .social i{
+        font-size: 30px;
+    }
 }
