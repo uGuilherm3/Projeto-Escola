@@ -735,8 +735,8 @@ footer i{
 }
 @media (max-width: 600px) {
     body{
-        width: 100vw;
-        overflow-x: hidden;
+        width: 99vw !important;
+        overflow-x: hidden !important;
     }
     header{
         display: none;
