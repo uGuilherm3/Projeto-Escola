@@ -44,3 +44,58 @@ btn3.addEventListener('click', () => {
     window.scrollTo({top: 0, behavior: "smooth"})
 })
 
+//botões da gestão
+function adicionar(){
+	var ad = document.querySelector('.gestao .cards .content2')
+
+	ad.classList.add("esp")
+}
+function remove(){
+	var ad = document.querySelector('.gestao .cards .content2')
+
+	ad.classList.remove("esp")
+}
+
+function adicionar2(){
+	var btns = document.getElementById('card2')
+
+	btns.classList.add("esp")
+}
+function remove2(){
+	var btns = document.getElementById('card2')
+
+	btns.classList.remove("esp")
+}
+
+function adicionar3(){
+	var btns = document.getElementById('card3')
+
+	btns.classList.add("esp")
+}
+function remove3(){
+	var btns = document.getElementById('card3')
+
+	btns.classList.remove("esp")
+}
+
+function adicionar4(){
+	var btns = document.getElementById('card4')
+
+	btns.classList.add("esp")
+}
+function remove4(){
+	var btns = document.getElementById('card4')
+
+	btns.classList.remove("esp")
+}
+
+function adicionar5(){
+	var btns = document.getElementById('card5')
+
+	btns.classList.add("esp")
+}
+function remove5(){
+	var btns = document.getElementById('card5')
+
+	btns.classList.remove("esp")
+}

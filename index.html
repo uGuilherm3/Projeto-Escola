@@ -12,6 +12,7 @@
 </head>
 <body>
 
+    <!--navbar-->
     <header>
 
         <img class="logo topo" src="imgs/zlogo.jpg">
@@ -147,7 +148,7 @@
                 <div class="content">
 
                     <div class="cards">
-                        <img src="imgs/alunoctb.jpeg">
+                        <img src="imgs/icon.png">
                         <div class="aluno">
                             <h4>nome do aluno</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Ipsa modi eos necessitatibus quas, porro ab iure omnis. blablabla</p>
@@ -161,11 +162,11 @@
                             <h4>nome do aluno</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Ipsa modi eos necessitatibus quas, porro ab iure omnis. blablabla</p>
                         </div>
-                        <img src="imgs/alunoctb.jpeg">
+                        <img src="imgs/icon.png">
                     </div>
 
                     <div class="cards">
-                        <img src="imgs/alunoctb.jpeg">
+                        <img src="imgs/icon.png">
                         <div class="aluno">
                             <h4>nome do aluno</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Ipsa modi eos necessitatibus quas, porro ab iure omnis. blablabla</p>
@@ -184,53 +185,126 @@
         <section id="contato" class="mais">
             <div class="title">
                 <h3>Saiba mais</h3>
-                <p>Conheça quem faz parte da nova gestão da Miguel Gurgel</p>
+                <p>conheça quem faz parte da nova gestão da Miguel Gurgel</p>
             </div>
             
             <div class="gestao">
                 
+                <!--Socorro-->
                 <div class="cards">
                     <img src="imgs/diretora.jpg">
-                    <a class="content" href="">
+                    <a class="content" onclick="adicionar()">
                         <h5>Diretora Socorro</h5>
                         <i class='bx bx-right-arrow-alt'></i>
                     </a>
+                    <div class="content2">
+
+                        <div class="content3">
+                            <img src="imgs/diretora.jpg">
+                            <h4>Diretora Socorro</h4>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, et. Excepturi fuga eos, magnam autem aliquam quas at repellat quidem velit quisquam.</p>
+
+                        <i class='bx bx-x' onclick="remove()"></i>
+                    </div>
                 </div> 
                 
+                <!--magno-->
                 <div class="cards">
                     <img src="imgs/magno.jpg">
-                    <a class="content" href="">
+                    <a class="content" onclick="adicionar2()">
                         <h5>Coordenador Magno</h5>
                         <i class='bx bx-right-arrow-alt'></i>
                     </a>
+                    <div id="card2" class="content2">
+
+                        <div class="content3">
+                            <img src="imgs/diretora.jpg">
+                            <h4>Coordenador Magno</h4>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, et. Excepturi fuga eos, magnam autem aliquam quas at repellat quidem velit quisquam.</p>
+
+                        <i class='bx bx-x' onclick="remove2()"></i>
+                    </div>
+
                 </div>
 
+                <!--vanessa-->
                 <div class="cards">
+
                     <img src="imgs/vanessa.jpg">
-                    <a class="content" href="">
+                    <a class="content" onclick="adicionar3()">
                         <h5>Coordenadora Vanessa</h5>
                         <i class='bx bx-right-arrow-alt'></i>
                     </a>
+
+                    <div id="card3" class="content2">
+
+                        <div class="content3">
+                            <img src="imgs/vanessa.jpg">
+                            <h4>Coordenadora Vanessa</h4>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, et. Excepturi fuga eos, magnam autem aliquam quas at repellat quidem velit quisquam.</p>
+
+                        <i class='bx bx-x' onclick="remove3()"></i>
+
+                    </div>
+
                 </div>
 
+                <!--brena-->
                 <div class="cards">
+
                     <img src="imgs/brena.jpg">
-                    <a class="content" href="">
+                    <a class="content" onclick="adicionar4()">
                         <h5>Coordenadora Brena</h5>
                         <i class='bx bx-right-arrow-alt'></i>
                     </a>
+
+                    <div id="card4" class="content2">
+
+                        <div class="content3">
+                            <img src="imgs/brena.jpg">
+                            <h4>Coordenadora Brena</h4>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, et. Excepturi fuga eos, magnam autem aliquam quas at repellat quidem velit quisquam.</p>
+
+                        <i class='bx bx-x' onclick="remove4()"></i>
+
+                    </div>
+
                 </div>
 
+                <!--carlos-->
                 <div class="cards">
+
                     <img src="imgs/carlos.jpg">
-                    <a class="content" href="">
+                    <a class="content" onclick="adicionar5()">
                         <h5>Tesoureiro Carlos</h5>
                         <i class='bx bx-right-arrow-alt'></i>
                     </a>
+
+                    <div id="card5" class="content2">
+
+                        <div class="content3">
+                            <img src="imgs/carlos.jpg">
+                            <h4>Tesoureiro Carlos</h4>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, et. Excepturi fuga eos, magnam autem aliquam quas at repellat quidem velit quisquam.</p>
+
+                        <i class='bx bx-x' onclick="remove5()"></i>
+                    </div>
+
                 </div>
 
             </div>
             
+            <!--contatos e banner-->
             <div class="conta">
 
                 <div class="contatos">
@@ -318,12 +392,6 @@
 </script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script>
-    AOS.init({
-        duration: 1500
-    });
-</script>
 
 </body>
 </html>
