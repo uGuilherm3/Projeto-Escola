@@ -1,6 +1,6 @@
 
 //btns
-const menuItems = document.querySelectorAll('nav a[href^="#"]','.btns a[href^="#"]','.navmob a[href^="#"]');
+const menuItems = document.querySelectorAll('nav a[href^="#"]','.btns a[href^="#"]');
 
 function getScrollTopByHref(element) {
 	const id = element.getAttribute('href');
@@ -99,3 +99,8 @@ function remove5(){
 
 	btns.classList.remove("esp")
 }
+var bot = document.querySelector("main a")
+
+bot.addEventListener('click', () => {
+    window.scrollTo({top: window.innerHeight, behavior: "smooth"})
+})
