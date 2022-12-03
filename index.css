@@ -953,6 +953,7 @@ footer i{
     }
     .gestao .content{
         font-size: 15px !important;
+        padding: 10px !important;
     }
     .gestao .cards::after{
         display: none;
