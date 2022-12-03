@@ -89,7 +89,13 @@ nav{
     display: flex;
     gap: 20px;
 }
+nav img{
+    width: 15px;
+}
 nav a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
     position: relative;
     padding: 10px;
     text-decoration: none;
@@ -108,38 +114,6 @@ nav a::after{
     transition: 0.3s ease;
 }
 nav a:hover::after{
-    width: 100%;
-}
-#ir{
-    position: relative;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    gap: 10px;
-    color: #000;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 14px;
-    width: max-content;
-}
-#ir i{
-    transition: 0.5s ease;
-}
-#ir:hover i{
-    animation: balancar 0.5s ease infinite alternate;
-    color: #F29325;
-}
-#ir::after{
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 2px;
-    bottom: -3px;
-    left: 0;
-    background-color: #F29325;
-    transition: .3s ease;
-}
-#ir:hover::after{
     width: 100%;
 }
 /*conteudo principal*/
@@ -208,8 +182,8 @@ main #back{
     width: 100%;
 }
 .sec1 img{
-    width: 350px;
-    height: 500px;
+    width: min(25em, 25vw);
+    height: min(35em, 35vw);
     object-fit: cover;
     border-radius: 25px;
 }
@@ -414,6 +388,7 @@ main #back{
     position: relative;
     display: flex;
     gap: 15px;
+    width: 500px;
     padding: 30px 20px;
     border-radius: 25px;
     background-color: #fff;
@@ -854,11 +829,18 @@ footer i{
         flex-direction: column;
         margin-top: 20px;
     }
+    .navmob .content2 img{
+        width: 15px;
+        height: 15px;
+    }
     .navmob a{
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 9px;
         color: #000;
         font-size: 16px;
-        padding: 15px 40px;
+        padding: 20px 40px;
     }
     h1{
         text-align: center;
@@ -880,12 +862,17 @@ footer i{
         gap: 30px;
         height: max-content;
     }
-    .sec1 .img{
-        width: 250px;
-        height: 350px;
+    .sec1 img{
+        width: 40vw;
+        height: 55vw;
     }
     .sec1 .img::after{
-        display: none;
+        width: 70px;
+        height: 70px;
+    }
+    .sec1 .img::before{
+        width: 70px;
+        height: 70px;
     }
     .sec1 .content{
         width: 80vw;
